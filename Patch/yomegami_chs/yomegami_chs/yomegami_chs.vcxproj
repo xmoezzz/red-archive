@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5ECEA0AE-2128-45BC-B19A-E9EF3A18208D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>yomegami_chs</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;YOMEGAMI_CHS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;YOMEGAMI_CHS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Compiler\cc_stream.cpp" />
+    <ClCompile Include="Compiler\compiler.cpp" />
+    <ClCompile Include="Compiler\psb_cc.cpp" />
+    <ClCompile Include="Compiler\psb_cc_array.cpp" />
+    <ClCompile Include="Compiler\psb_cc_base.cpp" />
+    <ClCompile Include="Compiler\psb_cc_boolean.cpp" />
+    <ClCompile Include="Compiler\psb_cc_btree.cpp" />
+    <ClCompile Include="Compiler\psb_cc_collection.cpp" />
+    <ClCompile Include="Compiler\psb_cc_decimal.cpp" />
+    <ClCompile Include="Compiler\psb_cc_integer.cpp" />
+    <ClCompile Include="Compiler\psb_cc_null.cpp" />
+    <ClCompile Include="Compiler\psb_cc_object.cpp" />
+    <ClCompile Include="Compiler\psb_cc_resource.cpp" />
+    <ClCompile Include="Compiler\psb_cc_string.cpp" />
+    <ClCompile Include="Compiler\psb_compiler_center.cpp" />
+    <ClCompile Include="Compiler\psb_link.cpp" />
+    <ClCompile Include="Compiler\psb_link_resource.cpp" />
+    <ClCompile Include="Decompiler\compress.c" />
+    <ClCompile Include="Decompiler\decompiler.cpp" />
+    <ClCompile Include="Decompiler\psb.cpp" />
+    <ClCompile Include="Insert\PsbText.cpp" />
+    <ClCompile Include="IStreamExXP3.cpp" />
+    <ClCompile Include="KaresekaHook.cpp" />
+    <ClCompile Include="my.cpp" />
+    <ClCompile Include="MyHook.cpp" />
+    <ClCompile Include="StreamHolderXP3.cpp" />
+    <ClCompile Include="tp_stub.cpp" />
+    <ClCompile Include="yomegami_chs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseStream.h" />
+    <ClInclude Include="Compiler\cc_stream.h" />
+    <ClInclude Include="Compiler\def.h" />
+    <ClInclude Include="Compiler\psb_cc.h" />
+    <ClInclude Include="Compiler\psb_cc_array.h" />
+    <ClInclude Include="Compiler\psb_cc_base.h" />
+    <ClInclude Include="Compiler\psb_cc_boolean.h" />
+    <ClInclude Include="Compiler\psb_cc_btree.h" />
+    <ClInclude Include="Compiler\psb_cc_collection.h" />
+    <ClInclude Include="Compiler\psb_cc_decimal.h" />
+    <ClInclude Include="Compiler\psb_cc_integer.h" />
+    <ClInclude Include="Compiler\psb_cc_null.h" />
+    <ClInclude Include="Compiler\psb_cc_object.h" />
+    <ClInclude Include="Compiler\psb_cc_resource.h" />
+    <ClInclude Include="Compiler\psb_cc_string.h" />
+    <ClInclude Include="Compiler\psb_compiler_center.h" />
+    <ClInclude Include="Compiler\psb_link.h" />
+    <ClInclude Include="Compiler\psb_link_resource.h" />
+    <ClInclude Include="Decompiler\compress.h" />
+    <ClInclude Include="Decompiler\psb.hpp" />
+    <ClInclude Include="Insert\PsbText.h" />
+    <ClInclude Include="Insert\TextPlugin.h" />
+    <ClInclude Include="IStreamExXP3.h" />
+    <ClInclude Include="KaresekaHook.h" />
+    <ClInclude Include="my.h" />
+    <ClInclude Include="MyHook.h" />
+    <ClInclude Include="PSBTool.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StreamHolderXP3.h" />
+    <ClInclude Include="tp_stub.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="yomegami_chs.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
