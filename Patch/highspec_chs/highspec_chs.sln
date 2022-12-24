@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "highspec_chs", "highspec_chs\highspec_chs.vcxproj", "{45F49EA4-3101-499D-AC05-86E350F52A6A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HighSpecLauncher", "HighSpecLauncher\HighSpecLauncher.vcxproj", "{86D05E5F-D602-4C14-9112-562A218384FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45F49EA4-3101-499D-AC05-86E350F52A6A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{45F49EA4-3101-499D-AC05-86E350F52A6A}.Debug|Win32.Build.0 = Debug|Win32
+		{45F49EA4-3101-499D-AC05-86E350F52A6A}.Release|Win32.ActiveCfg = Release|Win32
+		{45F49EA4-3101-499D-AC05-86E350F52A6A}.Release|Win32.Build.0 = Release|Win32
+		{86D05E5F-D602-4C14-9112-562A218384FE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{86D05E5F-D602-4C14-9112-562A218384FE}.Debug|Win32.Build.0 = Debug|Win32
+		{86D05E5F-D602-4C14-9112-562A218384FE}.Release|Win32.ActiveCfg = Release|Win32
+		{86D05E5F-D602-4C14-9112-562A218384FE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
