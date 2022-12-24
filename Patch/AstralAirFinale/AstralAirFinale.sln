@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Loader", "Loader\Loader.vcxproj", "{068AB221-2D78-45DC-B916-539E21F987EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AstralAirFinale_chs", "AstralAirFinale_chs\AstralAirFinale_chs.vcxproj", "{7488E1D4-7F88-4750-9F9A-F3C2ED5E5F24}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExtractText", "ExtractText\ExtractText.vcxproj", "{A376F7F0-09C6-4A8D-8264-AC59378740DB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataPacker", "DataPacker\DataPacker.vcxproj", "{4F97F2CC-1DCB-4D9A-8B1E-525EA6DBB3A8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DataUnpacker", "DataUnpacker\DataUnpacker.vcxproj", "{CE04D35B-3D0B-45E6-8D67-12C39984E193}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AstralAirFinale_cht_Loader", "AstralAirFinale_cht\AstralAirFinale_cht.vcxproj", "{A3C11247-426A-4EC3-B73F-36B5D789EE7A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AstralAirFinale_cht_dll", "AstralAirFinale_cht_dll\AstralAirFinale_cht_dll.vcxproj", "{90583892-02DB-4F7E-9581-22945526294D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChangeToV2", "ChangeToV2\ChangeToV2.vcxproj", "{9733415D-E555-4586-9106-AE477C88942C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{068AB221-2D78-45DC-B916-539E21F987EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{068AB221-2D78-45DC-B916-539E21F987EC}.Debug|Win32.Build.0 = Debug|Win32
+		{068AB221-2D78-45DC-B916-539E21F987EC}.Release|Win32.ActiveCfg = Release|Win32
+		{068AB221-2D78-45DC-B916-539E21F987EC}.Release|Win32.Build.0 = Release|Win32
+		{7488E1D4-7F88-4750-9F9A-F3C2ED5E5F24}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7488E1D4-7F88-4750-9F9A-F3C2ED5E5F24}.Debug|Win32.Build.0 = Debug|Win32
+		{7488E1D4-7F88-4750-9F9A-F3C2ED5E5F24}.Release|Win32.ActiveCfg = Release|Win32
+		{7488E1D4-7F88-4750-9F9A-F3C2ED5E5F24}.Release|Win32.Build.0 = Release|Win32
+		{A376F7F0-09C6-4A8D-8264-AC59378740DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A376F7F0-09C6-4A8D-8264-AC59378740DB}.Debug|Win32.Build.0 = Debug|Win32
+		{A376F7F0-09C6-4A8D-8264-AC59378740DB}.Release|Win32.ActiveCfg = Release|Win32
+		{A376F7F0-09C6-4A8D-8264-AC59378740DB}.Release|Win32.Build.0 = Release|Win32
+		{4F97F2CC-1DCB-4D9A-8B1E-525EA6DBB3A8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4F97F2CC-1DCB-4D9A-8B1E-525EA6DBB3A8}.Debug|Win32.Build.0 = Debug|Win32
+		{4F97F2CC-1DCB-4D9A-8B1E-525EA6DBB3A8}.Release|Win32.ActiveCfg = Release|Win32
+		{4F97F2CC-1DCB-4D9A-8B1E-525EA6DBB3A8}.Release|Win32.Build.0 = Release|Win32
+		{CE04D35B-3D0B-45E6-8D67-12C39984E193}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE04D35B-3D0B-45E6-8D67-12C39984E193}.Debug|Win32.Build.0 = Debug|Win32
+		{CE04D35B-3D0B-45E6-8D67-12C39984E193}.Release|Win32.ActiveCfg = Release|Win32
+		{CE04D35B-3D0B-45E6-8D67-12C39984E193}.Release|Win32.Build.0 = Release|Win32
+		{A3C11247-426A-4EC3-B73F-36B5D789EE7A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A3C11247-426A-4EC3-B73F-36B5D789EE7A}.Debug|Win32.Build.0 = Debug|Win32
+		{A3C11247-426A-4EC3-B73F-36B5D789EE7A}.Release|Win32.ActiveCfg = Release|Win32
+		{A3C11247-426A-4EC3-B73F-36B5D789EE7A}.Release|Win32.Build.0 = Release|Win32
+		{90583892-02DB-4F7E-9581-22945526294D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{90583892-02DB-4F7E-9581-22945526294D}.Debug|Win32.Build.0 = Debug|Win32
+		{90583892-02DB-4F7E-9581-22945526294D}.Release|Win32.ActiveCfg = Release|Win32
+		{90583892-02DB-4F7E-9581-22945526294D}.Release|Win32.Build.0 = Release|Win32
+		{9733415D-E555-4586-9106-AE477C88942C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9733415D-E555-4586-9106-AE477C88942C}.Debug|Win32.Build.0 = Debug|Win32
+		{9733415D-E555-4586-9106-AE477C88942C}.Release|Win32.ActiveCfg = Release|Win32
+		{9733415D-E555-4586-9106-AE477C88942C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
