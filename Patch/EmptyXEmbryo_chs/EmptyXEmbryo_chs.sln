@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EmptyXEmbryo_chs", "EmptyXEmbryo_chs\EmptyXEmbryo_chs.vcxproj", "{382B68A8-3FA4-405F-9BAF-F3B3F83ECCFF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Loader", "Loader\Loader.vcxproj", "{0513946B-4771-4052-9912-4D9710A0382C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{382B68A8-3FA4-405F-9BAF-F3B3F83ECCFF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{382B68A8-3FA4-405F-9BAF-F3B3F83ECCFF}.Debug|Win32.Build.0 = Debug|Win32
+		{382B68A8-3FA4-405F-9BAF-F3B3F83ECCFF}.Release|Win32.ActiveCfg = Release|Win32
+		{382B68A8-3FA4-405F-9BAF-F3B3F83ECCFF}.Release|Win32.Build.0 = Release|Win32
+		{0513946B-4771-4052-9912-4D9710A0382C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0513946B-4771-4052-9912-4D9710A0382C}.Debug|Win32.Build.0 = Debug|Win32
+		{0513946B-4771-4052-9912-4D9710A0382C}.Release|Win32.ActiveCfg = Release|Win32
+		{0513946B-4771-4052-9912-4D9710A0382C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
