@@ -1,0 +1,75 @@
+#ifndef __Patch_H__
+#define __Patch_H__
+
+#include <windows.h>
+
+#include "detours.h"
+
+#pragma comment(lib, "detours.lib")
+
+//public:
+BOOL InstallPatch();
+
+//private:
+void memcopy(void* dest,void*src,size_t size);
+
+void SetNopCode(BYTE* pnop,size_t size);
+
+void SetCHS();
+
+void SetFile();
+
+void __stdcall HookPushString();
+
+void __stdcall Decompress();
+
+bool CovtASCIIToUni(const char* GBKStr, wchar_t *wbuf, int nSize);
+
+#endif
+
+
+/*
+VMCode:
+004815E0  0041A550  P•A.   Entry address
+004815E4  00445890  êXD.   WhiteEte.00445890
+004815E8  004458C0  ¿XD.   WhiteEte.004458C0
+004815EC  00445940  @YD.  WhiteEte.00445940
+004815F0  004448E0  ‡HD.   WhiteEte.004448E0
+004815F4  00444900  .ID.  WhiteEte.00444900
+004815F8  00445A10  ZD.  WhiteEte.00445A10
+004815FC  00445A30  0ZD.  WhiteEte.00445A30
+00481600  00444940  @ID.  WhiteEte.00444940
+00481604  00444960  `ID.  WhiteEte.00444960
+00481608  00445A70  pZD.  WhiteEte.00445A70
+0048160C  00445AA0  †ZD.   WhiteEte.00445AA0
+00481610  00445AE0  ‡ZD.   WhiteEte.00445AE0
+00481614  00445B10  [D.  WhiteEte.00445B10
+00481618  00445B50  P[D.  WhiteEte.00445B50
+0048161C  00445B90  ê[D.   WhiteEte.00445B90
+00481620  00445C20   \D.  WhiteEte.00445C20
+00481624  00445CB0  ∞\D.   WhiteEte.00445CB0
+00481628  00445D30  0]D.  WhiteEte.00445D30
+0048162C  00444980  ÄID.  WhiteEte.00444980
+00481630  004449F0  ID.   WhiteEte.004449F0
+00481634  00445DB0  ∞]D.   WhiteEte.00445DB0
+00481638  00445E00  .^D.  WhiteEte.00445E00
+0048163C  00446280  ÄbD.  WhiteEte.00446280
+00481640  00446330  0cD.  WhiteEte.00446330
+00481644  00444A20   JD.  WhiteEte.00444A20
+00481648  00444A60  `JD.  WhiteEte.00444A60
+0048164C  00444C50  PLD.  WhiteEte.00444C50
+00481650  00444CE0  ‡LD.   WhiteEte.00444CE0
+00481654  00444D70  pMD.  WhiteEte.00444D70
+00481658  00444DF0  MD.   WhiteEte.00444DF0
+0048165C  00444E40  @ND.  WhiteEte.00444E40
+00481660  00444E90  êND.   WhiteEte.00444E90
+00481664  00444ED0  –ND.   WhiteEte.00444ED0
+00481668  00444F10  OD.  WhiteEte.00444F10
+0048166C  00445020   PD.  WhiteEte.00445020
+00481670  00445060  `PD.  WhiteEte.00445060
+00481674  00445180  ÄQD.  WhiteEte.00445180
+00481678  004451C0  ¿QD.   WhiteEte.004451C0
+0048167C  004452E0  ‡RD.   WhiteEte.004452E0
+
+*/
+
