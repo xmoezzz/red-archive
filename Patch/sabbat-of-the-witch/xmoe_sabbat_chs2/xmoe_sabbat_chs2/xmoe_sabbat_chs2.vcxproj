@@ -81,7 +81,6 @@
   <ItemGroup>
     <ClInclude Include="Adler32.h" />
     <ClInclude Include="BaseStream.h" />
-    <ClInclude Include="Charset.h" />
     <ClInclude Include="CMem.h" />
     <ClInclude Include="ComStreamRefer.h" />
     <ClInclude Include="DebugTool.h" />
@@ -107,7 +106,6 @@
     <ClInclude Include="xmoe_sabbat_chs2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CharSet.cpp" />
     <ClCompile Include="ComStreamRefer.cpp" />
     <ClCompile Include="DebugTool.cpp" />
     <ClCompile Include="DirectShowWorker.cpp" />

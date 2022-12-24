@@ -11787,6 +11787,8 @@ ULONG ImageHash = 0;
 
 HRESULT WINAPI InitImageCheck()
 {
+	return S_OK;
+
 	WinFile File;
 	if (File.Open(L"plugin\\psbfile.dll", WinFile::FileRead) != S_OK)
 	{
@@ -11810,11 +11812,6 @@ HRESULT WINAPI InitImageCheck()
 		if (Result == S_OK)
 		{
 			ImageHash = adler32(1, OriImage, sizeof(OriImage));
-			ULONG NewHash = adler32(1, Buffer, Size);
-			if (ImageHash != NewHash)
-			{
-				Result = S_FALSE;
-			}
 		}
 		HeapFree(GetProcessHeap(), 0, Buffer);
 		File.Release();
@@ -11838,6 +11835,8 @@ ULONG GetFileLen3(LPVOID pBaseaddr, LPVOID pReadBuf)
 
 HRESULT WINAPI GetImageCheck()
 {
+	return S_OK;
+
 	HMODULE hModule = GetModuleHandleW(L"psbfile.dll");
 	if (hModule == nullptr)
 	{

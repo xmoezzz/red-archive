@@ -1,3 +1,4 @@
+// dllmain.cpp : 定义 DLL 应用程序的入口点。
 #include "stdafx.h"
 #include "xmoe_sabbat_chs2.h"
 #include "DebugTool.h"
@@ -23,7 +24,7 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 		AllocConsole();
 #endif
 		//MessageBoxW(NULL, L"Debug", 0, 0);
-		if (FAILED(InitImageCheck()))
+		if (InitImageCheck() != S_OK)
 		{
 			MessageBoxW(NULL, L"启动失败", L"X'moe-CoreLib", MB_OK);
 			ExitProcess(-1);
