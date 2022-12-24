@@ -1,0 +1,9 @@
+EXPORTS
+  createQuickSync
+  destroyQuickSync
+  getVersion
+  check
+  gpu_memcpy_sse41
+  gpu_memcpy_avx2
+  mt_memcpy
+  mt_gpu_memcpy

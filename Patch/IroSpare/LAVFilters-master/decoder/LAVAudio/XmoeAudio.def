@@ -1,0 +1,10 @@
+; XmoeAudio.def ; declares the exports
+
+LIBRARY         "XmoeAudio.ax"
+
+EXPORTS
+                DllGetClassObject PRIVATE
+                DllCanUnloadNow PRIVATE
+                DllRegisterServer PRIVATE
+                DllUnregisterServer PRIVATE
+                OpenConfiguration PRIVATE

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRelease|Win32">
+      <Configuration>DebugRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRelease|x64">
+      <Configuration>DebugRelease</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0A058024-41F4-4509-97D2-803A1806CE86}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DSUtilLite</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(SolutionDir)common\platform.props" />
+  <PropertyGroup Condition="'$(Configuration)'=='Debug' Or '$(Configuration)'=='DebugRelease'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(SolutionDir)common\common.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)'=='Debug' Or '$(Configuration)'=='DebugRelease'">
+    <TargetName>dsutild</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <TargetName>dsutil</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug' Or '$(Configuration)'=='DebugRelease'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)common\genversion.bat"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)common\genversion.bat"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseDSPropPage.h" />
+    <ClInclude Include="CueSheet.h" />
+    <ClInclude Include="DSMResourceBag.h" />
+    <ClInclude Include="PopupMenu.h" />
+    <ClInclude Include="BaseTrayIcon.h" />
+    <ClInclude Include="ByteParser.h" />
+    <ClInclude Include="DeCSS\CSSauth.h" />
+    <ClInclude Include="DeCSS\CSSscramble.h" />
+    <ClInclude Include="DeCSS\DeCSSInputPin.h" />
+    <ClInclude Include="DShowUtil.h" />
+    <ClInclude Include="FloatingAverage.h" />
+    <ClInclude Include="FontInstaller.h" />
+    <ClInclude Include="gpu_memcpy_sse4.h" />
+    <ClInclude Include="growarray.h" />
+    <ClInclude Include="H264Nalu.h" />
+    <ClInclude Include="lavf_log.h" />
+    <ClInclude Include="rand_sse.h" />
+    <ClInclude Include="registry.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SynchronizedQueue.h" />
+    <ClInclude Include="timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseDSPropPage.cpp" />
+    <ClCompile Include="CueSheet.cpp" />
+    <ClCompile Include="DSMResourceBag.cpp" />
+    <ClCompile Include="PopupMenu.cpp" />
+    <ClCompile Include="BaseTrayIcon.cpp" />
+    <ClCompile Include="ByteParser.cpp" />
+    <ClCompile Include="DeCSS\CSSauth.cpp" />
+    <ClCompile Include="DeCSS\CSSscramble.cpp" />
+    <ClCompile Include="DeCSS\DeCSSInputPin.cpp" />
+    <ClCompile Include="DShowUtil.cpp" />
+    <ClCompile Include="filterreg.cpp" />
+    <ClCompile Include="FontInstaller.cpp" />
+    <ClCompile Include="H264Nalu.cpp" />
+    <ClCompile Include="locale.cpp" />
+    <ClCompile Include="registry.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

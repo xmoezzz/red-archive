@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugRelease|Win32">
+      <Configuration>DebugRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugRelease|x64">
+      <Configuration>DebugRelease</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D29ADED3-086B-46A8-9455-97EFF6B14775}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LAVVideo</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(SolutionDir)common\platform.props" />
+  <PropertyGroup Condition="'$(Configuration)'=='Debug' Or '$(Configuration)'=='DebugRelease'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(SolutionDir)common\common.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)'=='Debug' Or '$(Configuration)'=='DebugRelease'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.ax</TargetExt>
+    <OutDir>$(SolutionDir)bin_$(PlatformName)d\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.ax</TargetExt>
+    <OutDir>$(SolutionDir)bin_$(PlatformName)\$(ProjectName)\</OutDir>
+    <CustomBuildAfterTargets>Build</CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(ProjectDir);$(LibraryPath)</LibraryPath>
+    <EmbedManifest>false</EmbedManifest>
+    <TargetName>XmoeVideo</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug' Or '$(Configuration)'=='DebugRelease'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LAVVIDEO_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)qsdecoder</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>advapi32.lib;ole32.lib;gdi32.lib;winmm.lib;user32.lib;oleaut32.lib;shell32.lib;Shlwapi.lib;Comctl32.lib;d3d9.lib;mfuuid.lib;dmoguids.lib;strmbasd.lib;dsutild.lib;avutil-lav.lib;avcodec-lav.lib;swscale-lav.lib;avfilter-lav.lib</AdditionalDependencies>
+      <ModuleDefinitionFile>LAVVideo.def</ModuleDefinitionFile>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>$(ProjectDir)\$(ProjectName).manifest %(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LAVVIDEO_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(SolutionDir)qsdecoder</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>advapi32.lib;ole32.lib;gdi32.lib;winmm.lib;user32.lib;oleaut32.lib;shell32.lib;Secur32.lib;Shlwapi.lib;Ws2_32.lib;Comctl32.lib;d3d9.lib;mfuuid.lib;dmoguids.lib;strmbase.lib;dsutil.lib;avresample-lav.lib;avformat-lav.lib;avutil-lav.lib;avcodec-lav.lib;swscale-lav.lib;avfilter-lav.lib;zlib.lib</AdditionalDependencies>
+      <ModuleDefinitionFile>XmoeVideo.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy "$(TargetDir)\$(TargetName)$(TargetExt)" "$(OutDir).."</Command>
+      <Outputs>$(OutDir)..\$(TargetFileName)</Outputs>
+      <Inputs>$(TargetDir)\$(TargetName)$(TargetExt)</Inputs>
+    </CustomBuildStep>
+    <Manifest>
+      <AdditionalManifestFiles>$(ProjectDir)\$(ProjectName).manifest %(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="decoders\avcodec.cpp" />
+    <ClCompile Include="decoders\cuvid.cpp" />
+    <ClCompile Include="decoders\dxva2dec.cpp" />
+    <ClCompile Include="decoders\dxva2\DXVA2SurfaceAllocator.cpp" />
+    <ClCompile Include="decoders\pixfmt.cpp" />
+    <ClCompile Include="decoders\quicksync.cpp" />
+    <ClCompile Include="decoders\wmv9.cpp" />
+    <ClCompile Include="decoders\wmv9mft.cpp" />
+    <ClCompile Include="DecodeThread.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Filtering.cpp" />
+    <ClCompile Include="LAVPixFmtConverter.cpp" />
+    <ClCompile Include="LAVVideo.cpp" />
+    <ClCompile Include="Media.cpp" />
+    <ClCompile Include="parsers\AnnexBConverter.cpp" />
+    <ClCompile Include="parsers\H264SequenceParser.cpp" />
+    <ClCompile Include="parsers\HEVCSequenceParser.cpp" />
+    <ClCompile Include="parsers\MPEG2HeaderParser.cpp" />
+    <ClCompile Include="parsers\VC1HeaderParser.cpp" />
+    <ClCompile Include="pixconv\convert_direct.cpp" />
+    <ClCompile Include="pixconv\convert_generic.cpp" />
+    <ClCompile Include="pixconv\interleave.cpp" />
+    <ClCompile Include="pixconv\pixconv.cpp" />
+    <ClCompile Include="pixconv\rgb2rgb_unscaled.cpp" />
+    <ClCompile Include="pixconv\yuv2rgb.cpp" />
+    <ClCompile Include="pixconv\yuv2yuv_unscaled.cpp" />
+    <ClCompile Include="pixconv\yuv420_yuy2.cpp" />
+    <ClCompile Include="pixconv\yuv444_ayuv.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="subtitles\blend\blend_generic.cpp" />
+    <ClCompile Include="subtitles\LAVSubtitleConsumer.cpp" />
+    <ClCompile Include="subtitles\LAVSubtitleFrame.cpp" />
+    <ClCompile Include="subtitles\LAVSubtitleProvider.cpp" />
+    <ClCompile Include="subtitles\LAVVideoSubtitleInputPin.cpp" />
+    <ClCompile Include="subtitles\SubRenderOptionsImpl.cpp" />
+    <ClCompile Include="VideoInputPin.cpp" />
+    <ClCompile Include="VideoOutputPin.cpp" />
+    <ClCompile Include="VideoSettingsProp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\includes\SubRenderIntf.h" />
+    <ClInclude Include="decoders\avcodec.h" />
+    <ClInclude Include="decoders\cuvid.h" />
+    <ClInclude Include="decoders\DecBase.h" />
+    <ClInclude Include="decoders\dxva2dec.h" />
+    <ClInclude Include="decoders\dxva2\DXVA2SurfaceAllocator.h" />
+    <ClInclude Include="decoders\ILAVDecoder.h" />
+    <ClInclude Include="decoders\quicksync.h" />
+    <ClInclude Include="decoders\wmv9.h" />
+    <ClInclude Include="decoders\wmv9mft.h" />
+    <ClInclude Include="DecodeThread.h" />
+    <ClInclude Include="LAVPixFmtConverter.h" />
+    <ClInclude Include="LAVVideo.h" />
+    <ClInclude Include="LAVVideoSettings.h" />
+    <ClInclude Include="Media.h" />
+    <ClInclude Include="parsers\AnnexBConverter.h" />
+    <ClInclude Include="parsers\H264SequenceParser.h" />
+    <ClInclude Include="parsers\HEVCSequenceParser.h" />
+    <ClInclude Include="parsers\MPEG2HeaderParser.h" />
+    <ClInclude Include="parsers\VC1HeaderParser.h" />
+    <ClInclude Include="pixconv\pixconv_internal.h" />
+    <ClInclude Include="pixconv\pixconv_sse2_templates.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="subtitles\LAVSubtitleConsumer.h" />
+    <ClInclude Include="subtitles\LAVSubtitleFrame.h" />
+    <ClInclude Include="subtitles\LAVSubtitleProvider.h" />
+    <ClInclude Include="subtitles\LAVVideoSubtitleInputPin.h" />
+    <ClInclude Include="subtitles\SubRenderOptionsImpl.h" />
+    <ClInclude Include="VideoInputPin.h" />
+    <ClInclude Include="VideoOutputPin.h" />
+    <ClInclude Include="VideoSettingsProp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LAVVideo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\resources\red.ico" />
+    <None Include="LAVVideo.rc2" />
+    <Manifest Include="LAVVideo.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="打包流光.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="my.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FinalDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dragon-ref.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dragon-sboxes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lzss.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="blosclz.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="depacks.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="depack.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="brieflz.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lzrw1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="minilzo.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FastLz.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LZJB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LZW.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RabbitDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="panama.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Salsa20Decoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PanamaDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="blake2b.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="py.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JHHash.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Edon80Decoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Edon80.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PyDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Chacha.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChachaDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyHash.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhelixDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="phelix.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Rabbit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SosemanukDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Sosemanuk.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cubehash.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="salsa20.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mt19937ar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HC128Decoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VMPC.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HC128.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ASEDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="blake2s.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="blake2sp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="blake2bp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ASE.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyHook.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalMap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="md4-sse2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Huffman.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Arithmetic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RLE.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CryptMTDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="md5-sse2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sha512-sse2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sha1-sse2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sha256-sse2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cryptmt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RC4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cxdec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LzmaDec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="snappy-stubs-internal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="snappy-sinksource.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="snappy-c.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="snappy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickLZ.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lz4.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lzfse_decode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lzfse_decode_base.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lzfse_encode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lzfse_encode_base.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lzfse_fse.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lzvn_decode_base.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lzvn_encode_base.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Init2ndKey.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Init1stKey.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NekoXcodeDecoder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="my.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SecondStreamDecoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeKeyDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dragon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzss.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blosclz.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blosc-export.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="brotli_decoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="brieflz.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzrw1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzodefs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzoconf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="minilzo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FastLZ.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LZJB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2-impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="panama.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JHHash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ecrypt-portable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamDecoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Edon80.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="py.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Chacha.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyHash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="phelix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NekoXcodeDecoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Rabbit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeHashWarpper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sosemanuk.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sph_cubehash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sph_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Salsa20.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mt19937ar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ecrypt-sync.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Blake2Wrapper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2-load-xop.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2s-round.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2s-load-sse2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2b-load-sse2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2b-round.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2-config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RedBlack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ASE.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HashConst.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickLZ.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HashFun.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDecoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LZW.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Huffman.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RLE.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="platform.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ecrypt-sync-ae.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zconf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cryptmt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cxdec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LzmaDec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Precomp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="7zTypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy-stubs-public.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy-stubs-internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy-sinksource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy-internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy-C.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseStream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShinkuDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzfse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzfse_encode_tables.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzfse_fse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzfse_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzfse_tunables.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzvn_decode_base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lzvn_encode_base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lz4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl\getbit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl\ucl\ucl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl\ucl\ucl_asm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl\ucl\ucl_conf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl\ucl_ptr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ucl\ucl\uclconf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ecrypt-machine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ecrypt-config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="encode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Init2ndKey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Init1stKey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

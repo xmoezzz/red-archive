@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{72d0b727-3294-44aa-9d82-62b45ffad724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{db3d63f1-bcc7-45a4-a77e-c82371e4a86b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Allocators">
+      <UniqueIdentifier>{c57451da-9975-423e-9e1e-c8667c98c3a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Allocators">
+      <UniqueIdentifier>{f1fdd9a0-ea0d-4419-b2d6-4fa904080c16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utility">
+      <UniqueIdentifier>{d85caa20-ea42-474b-a316-3d0324321b2c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CodecInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H264Nalu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSyncDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IQuickSyncDecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frame_constructors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSync.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSync_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base_allocator.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d_allocator.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="sysmem_allocator.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSyncUtils.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSyncVPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d11_allocator.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d11_device.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="hw_device.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d_device.h">
+      <Filter>Header Files\Allocators</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="QuickSyncExports.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H264Nalu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSyncDecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frame_constructors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSync.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSyncUtils.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="base_alllocator.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d_allocator.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="sysmem_allocator.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSyncVPP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d11_allocator.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d11_device.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d_device.cpp">
+      <Filter>Source Files\Allocators</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IntelQuickSyncDecoder.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IntelQuickSyncDecoder.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Compression">
+      <UniqueIdentifier>{5e8783b8-3b74-458e-967f-3f520a981a96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="StreamDecoder">
+      <UniqueIdentifier>{87adab09-8de4-4e49-9991-0d7988d1217f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GlobalMap">
+      <UniqueIdentifier>{af41fbb0-1047-463f-a38b-7e4fe104e416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{46271572-2d45-478e-bea1-783035dd692a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommonDecoder">
+      <UniqueIdentifier>{1878fb79-4016-46c1-9e67-040269f7963d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Blake">
+      <UniqueIdentifier>{f9cd586d-00bb-40a8-a0f6-6dd74edb1207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rand">
+      <UniqueIdentifier>{c6c811d8-e4e1-4421-ab1a-ed3cd6464696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\CubeHash">
+      <UniqueIdentifier>{0b9e7793-985e-412b-b12a-b0203226f984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\JHHash">
+      <UniqueIdentifier>{be89eae6-cd6e-4684-9f1d-d2a4a220bb35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MyHash">
+      <UniqueIdentifier>{17ce1405-ba48-4a1e-80e1-efb72692283f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compression\lzfse">
+      <UniqueIdentifier>{ccd8ba08-81e7-4250-8c56-d86b472feeba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compression\brotli">
+      <UniqueIdentifier>{8f31a98d-da7d-4508-9d8c-3192b7440e5f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="iro_chs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="my.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tp_stub.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KAGParser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ShinkuHook.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyHook.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamHolder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lz4.c">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickLZ.c">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="snappy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="snappy-c.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="snappy-sinksource.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="snappy-stubs-internal.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="LzmaDec.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="Cxdec.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="RC4.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDecoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="cryptmt.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="CryptMTDecoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="md4-sse2.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="md5-sse2.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="sha1-sse2.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="sha512-sse2.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="sha256-sse2.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="panama.c">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalMap.cpp">
+      <Filter>GlobalMap</Filter>
+    </ClCompile>
+    <ClCompile Include="phelix.c">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="PhelixDecoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="RLE.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="Arithmetic.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="Huffman.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="LZW.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="ASEDecoder.cpp">
+      <Filter>CommonDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="VMPC.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="blake2b.c">
+      <Filter>Common\Blake</Filter>
+    </ClCompile>
+    <ClCompile Include="blake2bp.c">
+      <Filter>Common\Blake</Filter>
+    </ClCompile>
+    <ClCompile Include="blake2sp.c">
+      <Filter>Common\Blake</Filter>
+    </ClCompile>
+    <ClCompile Include="blake2s.c">
+      <Filter>Common\Blake</Filter>
+    </ClCompile>
+    <ClCompile Include="HC128.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="HC128Decoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="mt19937ar.cpp">
+      <Filter>Rand</Filter>
+    </ClCompile>
+    <ClCompile Include="salsa20.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Salsa20Decoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="cubehash.cpp">
+      <Filter>Common\CubeHash</Filter>
+    </ClCompile>
+    <ClCompile Include="Sosemanuk.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="SosemanukDecoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Rabbit.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="JHHash.cpp">
+      <Filter>Common\JHHash</Filter>
+    </ClCompile>
+    <ClCompile Include="NekoXcodeDecoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="MyHash.cpp">
+      <Filter>Common\MyHash</Filter>
+    </ClCompile>
+    <ClCompile Include="PanamaDecoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Chacha.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="ChachaDecoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="py.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="PyDecoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Edon80.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Edon80Decoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="RabbitDecoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="LZJB.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="FastLz.c">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="minilzo.c">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="lzrw1.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="brieflz.c">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="depack.c">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="depacks.c">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="lzfse_decode.c">
+      <Filter>Compression\lzfse</Filter>
+    </ClCompile>
+    <ClCompile Include="lzfse_decode_base.c">
+      <Filter>Compression\lzfse</Filter>
+    </ClCompile>
+    <ClCompile Include="lzfse_encode.c">
+      <Filter>Compression\lzfse</Filter>
+    </ClCompile>
+    <ClCompile Include="lzfse_encode_base.c">
+      <Filter>Compression\lzfse</Filter>
+    </ClCompile>
+    <ClCompile Include="lzfse_fse.c">
+      <Filter>Compression\lzfse</Filter>
+    </ClCompile>
+    <ClCompile Include="lzvn_decode_base.c">
+      <Filter>Compression\lzfse</Filter>
+    </ClCompile>
+    <ClCompile Include="lzvn_encode_base.c">
+      <Filter>Compression\lzfse</Filter>
+    </ClCompile>
+    <ClCompile Include="blosclz.c">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="lzss.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="dragon-ref.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonDecoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Init2ndKey.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dragon-sboxes.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="FinalDecoder.cpp">
+      <Filter>StreamDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="Init1stKey.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AdditionInit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyStream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IStreamEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TextStream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyUtf8.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CmpPatch2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CmpPatch3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AntiLive32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AES.cpp">
+      <Filter>CommonDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="twofish.c">
+      <Filter>CommonDecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="IStreamExXP3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamHolderXP3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyCxdec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="my.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tp_stub.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tjsHashSearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KAGParser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShinkuHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseStream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ShinkuDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamHolder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickLZ.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="lz4.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy-C.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy-internal.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy-sinksource.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy-stubs-internal.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="snappy-stubs-public.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="7zTypes.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="Precomp.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="LzmaDec.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="Cxdec.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamDecoder.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="cryptmt.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="HashFun.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="HashConst.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="panama.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalMap.h">
+      <Filter>GlobalMap</Filter>
+    </ClInclude>
+    <ClInclude Include="zconf.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="ecrypt-config.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="ecrypt-machine.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="ecrypt-portable.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="ecrypt-sync-ae.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="phelix.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="platform.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="RLE.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="Arithmetic.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="Huffman.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="LZW.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="RedBlack.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="zstd.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeKeyDef.h">
+      <Filter>GlobalMap</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2b-round.h">
+      <Filter>Common\Blake</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2b-load-sse2.h">
+      <Filter>Common\Blake</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2s-load-sse2.h">
+      <Filter>Common\Blake</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2.h">
+      <Filter>Common\Blake</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2-impl.h">
+      <Filter>Common\Blake</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2-config.h">
+      <Filter>Common\Blake</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2s-round.h">
+      <Filter>Common\Blake</Filter>
+    </ClInclude>
+    <ClInclude Include="blake2-load-xop.h">
+      <Filter>Common\Blake</Filter>
+    </ClInclude>
+    <ClInclude Include="Blake2Wrapper.h">
+      <Filter>Common\Blake</Filter>
+    </ClInclude>
+    <ClInclude Include="ecrypt-sync.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="mt19937ar.h">
+      <Filter>Rand</Filter>
+    </ClInclude>
+    <ClInclude Include="Salsa20.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="sph_cubehash.h">
+      <Filter>Common\CubeHash</Filter>
+    </ClInclude>
+    <ClInclude Include="sph_types.h">
+      <Filter>Common\CubeHash</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeHashWarpper.h">
+      <Filter>Common\CubeHash</Filter>
+    </ClInclude>
+    <ClInclude Include="Sosemanuk.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="Rabbit.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="JHHash.h">
+      <Filter>Common\JHHash</Filter>
+    </ClInclude>
+    <ClInclude Include="NekoXcodeDecoder.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="MyHash.h">
+      <Filter>Common\MyHash</Filter>
+    </ClInclude>
+    <ClInclude Include="Chacha.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="py.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="Edon80.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="LZJB.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="FastLZ.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="minilzo.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="lzoconf.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="lzodefs.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="lzrw1.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="brieflz.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="lzfse.h">
+      <Filter>Compression\lzfse</Filter>
+    </ClInclude>
+    <ClInclude Include="lzfse_encode_tables.h">
+      <Filter>Compression\lzfse</Filter>
+    </ClInclude>
+    <ClInclude Include="lzfse_fse.h">
+      <Filter>Compression\lzfse</Filter>
+    </ClInclude>
+    <ClInclude Include="lzfse_internal.h">
+      <Filter>Compression\lzfse</Filter>
+    </ClInclude>
+    <ClInclude Include="lzfse_tunables.h">
+      <Filter>Compression\lzfse</Filter>
+    </ClInclude>
+    <ClInclude Include="lzvn_decode_base.h">
+      <Filter>Compression\lzfse</Filter>
+    </ClInclude>
+    <ClInclude Include="lzvn_encode_base.h">
+      <Filter>Compression\lzfse</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>Compression\brotli</Filter>
+    </ClInclude>
+    <ClInclude Include="brotli_decoder.h">
+      <Filter>Compression\brotli</Filter>
+    </ClInclude>
+    <ClInclude Include="blosc-export.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="blosclz.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="lzss.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="dragon.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="SecondStreamDecoder.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="Init2ndKey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Init1stKey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDecoder.h">
+      <Filter>StreamDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="MyStream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IStreamEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TextStream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyUtf8.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AES.h">
+      <Filter>CommonDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="twofish.h">
+      <Filter>CommonDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>CommonDecoder</Filter>
+    </ClInclude>
+    <ClInclude Include="DummyChecker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IStreamExXP3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamHolderXP3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyCxdec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

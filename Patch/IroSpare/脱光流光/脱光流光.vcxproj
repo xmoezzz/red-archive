@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACE89ADD-CA35-45A0-B504-21C3212993E2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>脱光流光</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>decoder</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSdk_71A_IncludePath);$(ProjectDir)UCL;</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Arithmetic.cpp" />
+    <ClCompile Include="ASE.cpp" />
+    <ClCompile Include="ASEDecoder.cpp" />
+    <ClCompile Include="BaseDecoder.cpp" />
+    <ClCompile Include="blake2b.c" />
+    <ClCompile Include="blake2bp.c" />
+    <ClCompile Include="blake2s.c" />
+    <ClCompile Include="blake2sp.c" />
+    <ClCompile Include="blosclz.c" />
+    <ClCompile Include="brieflz.c" />
+    <ClCompile Include="Chacha.cpp" />
+    <ClCompile Include="ChachaDecoder.cpp" />
+    <ClCompile Include="cryptmt.cpp" />
+    <ClCompile Include="CryptMTDecoder.cpp" />
+    <ClCompile Include="cubehash.cpp" />
+    <ClCompile Include="Cxdec.cpp" />
+    <ClCompile Include="depack.c" />
+    <ClCompile Include="depacks.c" />
+    <ClCompile Include="dragon-ref.cpp" />
+    <ClCompile Include="dragon-sboxes.cpp" />
+    <ClCompile Include="DragonDecoder.cpp" />
+    <ClCompile Include="Edon80.cpp" />
+    <ClCompile Include="Edon80Decoder.cpp" />
+    <ClCompile Include="FastLz.c" />
+    <ClCompile Include="FinalDecoder.cpp" />
+    <ClCompile Include="GlobalMap.cpp" />
+    <ClCompile Include="HC128.cpp" />
+    <ClCompile Include="HC128Decoder.cpp" />
+    <ClCompile Include="Huffman.cpp" />
+    <ClCompile Include="Init1stKey.cpp" />
+    <ClCompile Include="Init2ndKey.cpp" />
+    <ClCompile Include="JHHash.cpp" />
+    <ClCompile Include="lz4.c" />
+    <ClCompile Include="lzfse_decode.c" />
+    <ClCompile Include="lzfse_decode_base.c" />
+    <ClCompile Include="lzfse_encode.c" />
+    <ClCompile Include="lzfse_encode_base.c" />
+    <ClCompile Include="lzfse_fse.c" />
+    <ClCompile Include="LZJB.cpp" />
+    <ClCompile Include="LzmaDec.cpp" />
+    <ClCompile Include="lzrw1.cpp" />
+    <ClCompile Include="lzss.cpp" />
+    <ClCompile Include="lzvn_decode_base.c" />
+    <ClCompile Include="lzvn_encode_base.c" />
+    <ClCompile Include="LZW.cpp" />
+    <ClCompile Include="md4-sse2.cpp" />
+    <ClCompile Include="minilzo.c" />
+    <ClCompile Include="mt19937ar.cpp" />
+    <ClCompile Include="my.cpp" />
+    <ClCompile Include="MyHash.cpp" />
+    <ClCompile Include="MyHook.cpp" />
+    <ClCompile Include="NekoXcodeDecoder.cpp" />
+    <ClCompile Include="panama.c" />
+    <ClCompile Include="PanamaDecoder.cpp" />
+    <ClCompile Include="phelix.c" />
+    <ClCompile Include="PhelixDecoder.cpp" />
+    <ClCompile Include="py.cpp" />
+    <ClCompile Include="PyDecoder.cpp" />
+    <ClCompile Include="QuickLZ.c" />
+    <ClCompile Include="Rabbit.cpp" />
+    <ClCompile Include="RabbitDecoder.cpp" />
+    <ClCompile Include="RC4.cpp" />
+    <ClCompile Include="RLE.cpp" />
+    <ClCompile Include="salsa20.cpp" />
+    <ClCompile Include="Salsa20Decoder.cpp" />
+    <ClCompile Include="sha1-sse2.cpp" />
+    <ClCompile Include="sha256-sse2.cpp" />
+    <ClCompile Include="sha512-sse2.cpp" />
+    <ClCompile Include="snappy-c.cpp" />
+    <ClCompile Include="snappy-sinksource.cpp" />
+    <ClCompile Include="snappy-stubs-internal.cpp" />
+    <ClCompile Include="snappy.cpp" />
+    <ClCompile Include="Sosemanuk.cpp" />
+    <ClCompile Include="SosemanukDecoder.cpp" />
+    <ClCompile Include="VMPC.cpp" />
+    <ClCompile Include="脱光流光.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="7zTypes.h" />
+    <ClInclude Include="Arithmetic.h" />
+    <ClInclude Include="ASE.h" />
+    <ClInclude Include="BaseDecoder.h" />
+    <ClInclude Include="BaseStream.h" />
+    <ClInclude Include="blake2-config.h" />
+    <ClInclude Include="blake2-impl.h" />
+    <ClInclude Include="blake2-load-xop.h" />
+    <ClInclude Include="blake2.h" />
+    <ClInclude Include="blake2b-load-sse2.h" />
+    <ClInclude Include="blake2b-round.h" />
+    <ClInclude Include="blake2s-load-sse2.h" />
+    <ClInclude Include="blake2s-round.h" />
+    <ClInclude Include="Blake2Wrapper.h" />
+    <ClInclude Include="blosc-export.h" />
+    <ClInclude Include="blosclz.h" />
+    <ClInclude Include="brieflz.h" />
+    <ClInclude Include="brotli_decoder.h" />
+    <ClInclude Include="Chacha.h" />
+    <ClInclude Include="Compiler.h" />
+    <ClInclude Include="cryptmt.h" />
+    <ClInclude Include="CubeHashWarpper.h" />
+    <ClInclude Include="Cxdec.h" />
+    <ClInclude Include="dragon.h" />
+    <ClInclude Include="ecrypt-config.h" />
+    <ClInclude Include="ecrypt-machine.h" />
+    <ClInclude Include="ecrypt-portable.h" />
+    <ClInclude Include="ecrypt-sync-ae.h" />
+    <ClInclude Include="ecrypt-sync.h" />
+    <ClInclude Include="Edon80.h" />
+    <ClInclude Include="encode.h" />
+    <ClInclude Include="FastLZ.h" />
+    <ClInclude Include="GlobalMap.h" />
+    <ClInclude Include="HashConst.h" />
+    <ClInclude Include="HashFun.h" />
+    <ClInclude Include="Huffman.h" />
+    <ClInclude Include="Init1stKey.h" />
+    <ClInclude Include="Init2ndKey.h" />
+    <ClInclude Include="JHHash.h" />
+    <ClInclude Include="lz4.h" />
+    <ClInclude Include="lzfse.h" />
+    <ClInclude Include="lzfse_encode_tables.h" />
+    <ClInclude Include="lzfse_fse.h" />
+    <ClInclude Include="lzfse_internal.h" />
+    <ClInclude Include="lzfse_tunables.h" />
+    <ClInclude Include="LZJB.h" />
+    <ClInclude Include="LzmaDec.h" />
+    <ClInclude Include="lzoconf.h" />
+    <ClInclude Include="lzodefs.h" />
+    <ClInclude Include="lzrw1.h" />
+    <ClInclude Include="lzss.h" />
+    <ClInclude Include="lzvn_decode_base.h" />
+    <ClInclude Include="lzvn_encode_base.h" />
+    <ClInclude Include="LZW.h" />
+    <ClInclude Include="minilzo.h" />
+    <ClInclude Include="mt19937ar.h" />
+    <ClInclude Include="my.h" />
+    <ClInclude Include="MyHash.h" />
+    <ClInclude Include="MyHook.h" />
+    <ClInclude Include="NekoXcodeDecoder.h" />
+    <ClInclude Include="NodeKeyDef.h" />
+    <ClInclude Include="panama.h" />
+    <ClInclude Include="phelix.h" />
+    <ClInclude Include="platform.h" />
+    <ClInclude Include="Precomp.h" />
+    <ClInclude Include="py.h" />
+    <ClInclude Include="QuickLZ.h" />
+    <ClInclude Include="Rabbit.h" />
+    <ClInclude Include="RedBlack.h" />
+    <ClInclude Include="RLE.h" />
+    <ClInclude Include="Salsa20.h" />
+    <ClInclude Include="SecondStreamDecoder.h" />
+    <ClInclude Include="ShinkuDef.h" />
+    <ClInclude Include="snappy-C.h" />
+    <ClInclude Include="snappy-internal.h" />
+    <ClInclude Include="snappy-sinksource.h" />
+    <ClInclude Include="snappy-stubs-internal.h" />
+    <ClInclude Include="snappy-stubs-public.h" />
+    <ClInclude Include="snappy.h" />
+    <ClInclude Include="Sosemanuk.h" />
+    <ClInclude Include="sph_cubehash.h" />
+    <ClInclude Include="sph_types.h" />
+    <ClInclude Include="StreamDecoder.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="zconf.h" />
+    <ClInclude Include="zlib.h" />
+    <ClInclude Include="zstd.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

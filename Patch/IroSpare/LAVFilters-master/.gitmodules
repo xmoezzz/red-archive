@@ -1,0 +1,12 @@
+[submodule "ffmpeg"]
+	path = ffmpeg
+	url = git://git.1f0.de/ffmpeg.git
+[submodule "libbluray"]
+	path = libbluray
+	url = git://git.1f0.de/libbluray.git
+[submodule "qsdecoder"]
+	path = qsdecoder
+	url = git://git.1f0.de/qsdecoder.git
+[submodule "thirdparty/dcadec"]
+	path = thirdparty/dcadec
+	url = https://github.com/foo86/dcadec.git

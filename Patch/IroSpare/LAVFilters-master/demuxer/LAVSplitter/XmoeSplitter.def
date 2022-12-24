@@ -1,0 +1,10 @@
+; XmoeFDShowSplitter.def ; declares the exports
+
+LIBRARY         "XmoeSplitter.ax"
+
+EXPORTS
+                DllGetClassObject PRIVATE
+                DllCanUnloadNow PRIVATE
+                DllRegisterServer PRIVATE
+                DllUnregisterServer PRIVATE
+                OpenConfiguration PRIVATE

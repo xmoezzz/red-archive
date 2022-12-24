@@ -1,0 +1,264 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "..\\..\\resources\\blue.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""LAVAudio.rc2"" // non-Microsoft Visual C++ edited resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_AUDIO_SETTINGS DIALOGEX 0, 0, 369, 224
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Dynamic Range Compression",IDC_DRC_BOX,7,7,196,40
+    CONTROL         "Apply DRC on formats that support it (AC3, EAC3)",IDC_DRC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,17,177,10
+    CONTROL         "",IDC_DRC_LEVEL,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,50,30,100,12
+    LTEXT           "Level: ",IDC_LBL_DRC_LEVEL,15,30,28,8
+    LTEXT           "100%",IDC_DRC_LEVEL_TEXT,150,30,20,8,0,WS_EX_RIGHT
+    GROUPBOX        "Bitstreaming (S/PDIF, HDMI)",IDC_BITSTREAMING,7,50,196,88
+    LTEXT           "Formats",IDC_BS_FORMATS,12,60,122,8
+    CONTROL         "Dolby Digital (AC-3)",IDC_BS_AC3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,72,79,10
+    CONTROL         "Dolby Digital Plus (E-AC3)",IDC_BS_EAC3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,86,97,10
+    CONTROL         "Dolby TrueHD",IDC_BS_TRUEHD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,100,60,10
+    CONTROL         "DTS",IDC_BS_DTS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,72,29,10
+    CONTROL         "DTS-HD",IDC_BS_DTSHD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,86,41,10
+    LTEXT           "Options",IDC_BS_OPTIONS,12,112,26,8
+    CONTROL         "Use DTS-HD Framing for all DTS types",IDC_BS_DTSHD_FRAMING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,123,137,10
+    GROUPBOX        "Options",IDC_OPTIONS,7,139,196,65
+    CONTROL         "Auto A/V Sync correction",IDC_AUTO_AVSYNC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,150,96,10
+    CONTROL         "Convert Output to Standard Channel Layouts",IDC_STANDARD_CH_LAYOUT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,164,162,10
+    CONTROL         "Expand Mono to Stereo",IDC_EXPAND_MONO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,178,91,10
+    CONTROL         "Expand 6.1 to 7.1",IDC_EXPAND61,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,178,74,10
+    CONTROL         "Use Legacy 5.1 channel layout",IDC_OUTPUT51_LEGACY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,192,162,10
+    LTEXT           "LAV Audio Decoder x.xx",IDC_LAVAUDIO_FOOTER,209,211,149,8,0,WS_EX_RIGHT
+    GROUPBOX        "Output Formats",IDC_OUTPUT_FORMATS,207,59,151,132
+    LTEXT           "Select which output formats are available.\nThe best format is used automatically.",IDC_LBL_OUTPUTFORMATS,213,70,140,22
+    CONTROL         "16-bit Integer",IDC_OUT_S16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,91,61,10
+    CONTROL         "24-bit Integer",IDC_OUT_S24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,286,91,61,10
+    CONTROL         "32-bit Integer",IDC_OUT_S32,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,107,61,10
+    CONTROL         "32-bit Floating-point",IDC_OUT_FP32,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,123,81,10
+    CONTROL         "8-bit Integer",IDC_OUT_U8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,286,107,54,10
+    CONTROL         "Use Dithering for 16-bit Output",IDC_OUT_S16_DITHER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,216,139,125,10
+    LTEXT           "Enabling all formats will allow untouched / bitexact output. Only if a format is not compatible with your hard- or software it should be disabled.",IDC_LBL_OUTNOTE,213,152,140,37
+    GROUPBOX        "Audio Delay",IDC_GROUP_DELAY,207,7,151,50
+    CONTROL         "Enable Audio Delay",IDC_DELAY_ENABLED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,214,20,113,10
+    LTEXT           "Delay (in ms):",IDC_STATIC,213,37,47,8
+    EDITTEXT        IDC_DELAY,261,35,46,13,ES_AUTOHSCROLL,WS_EX_RIGHT
+    CONTROL         "",IDC_DELAYSPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,305,35,11,13
+    CONTROL         "Enable System Tray Icon",IDC_TRAYICON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,209,192,10
+END
+
+IDD_PROPPAGE_AUDIO_MIXING DIALOGEX 0, 0, 369, 215
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Mixer",IDC_LBL_MIXING,7,7,214,112
+    CONTROL         "Enable Mixing",IDC_MIXING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,19,59,10
+    LTEXT           "Output Speaker Configuration:",IDC_LBL_OUTPUT_SPEAKERS,15,32,100,8
+    COMBOBOX        IDC_OUTPUT_SPEAKERS,121,30,90,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Settings",IDC_MIX_SETTINGS,225,7,133,56
+    CONTROL         "Don't mix Stereo sources",IDC_UNTOUCHED_STEREO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,19,100,10
+    CONTROL         "Normalize Matrix",IDC_NORMALIZE_MATRIX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,33,100,10
+    CONTROL         "Clipping Protection",IDC_CLIP_PROTECTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,235,47,100,10
+    GROUPBOX        "Matrix Encoding",IDC_MIXING_MODE,225,67,133,51
+    CONTROL         "None",IDC_MIXMODE_NORMAL,"Button",BS_AUTORADIOBUTTON,235,79,116,10
+    CONTROL         "Dolby Pro Logic",IDC_MIXMODE_DOLBY,"Button",BS_AUTORADIOBUTTON,235,91,116,10
+    CONTROL         "Dolby Pro Logic II",IDC_MIXMODE_DPL2,"Button",BS_AUTORADIOBUTTON,235,103,116,10
+    LTEXT           "Center Mix Level",IDC_LBL_CENTER_LEVEL,12,50,54,8
+    CONTROL         "",IDC_MIX_LEVEL_CENTER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,72,47,130,15
+    LTEXT           "0.00",IDC_MIX_LEVEL_CENTER_TEXT,202,50,16,8
+    LTEXT           "Surround Mix Level",IDC_LBL_SURROUND_LEVEL,12,65,62,8
+    CONTROL         "",IDC_MIX_LEVEL_SURROUND,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,72,62,130,15
+    LTEXT           "0.00",IDC_MIX_LEVEL_SURROUND_TEXT,202,65,16,8
+    LTEXT           "LFE Mix Level",IDC_LBL_LFE_LEVEL,12,80,44,8
+    CONTROL         "",IDC_MIX_LEVEL_LFE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,72,77,130,15
+    LTEXT           "0.00",IDC_MIX_LEVEL_LFE_TEXT,202,80,16,8
+    LTEXT           "The mixing levels control the volume of the individual channels when being mixed with other channels into a downmix.",IDC_LBL_MIXING_LEVEL,12,97,200,18
+END
+
+IDD_PROPPAGE_FORMATS DIALOGEX 0, 0, 369, 215
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LTEXT           "Here you can select which formats LAV Audio should decode.\nBecause LAV Audio supports a wide range of (rare) formats, not all are listed here.\nIf you need to configure a specific format which is not listed, submit a ticket asking for the option.",IDC_LBL_FORMATS,8,10,333,30
+    CONTROL         "",IDC_CODECS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,40,351,166
+END
+
+IDD_PROPPAGE_STATUS DIALOGEX 0, 0, 214, 156
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Input",IDC_INPUT_STATUS,7,7,98,61
+    LTEXT           "Codec:",IDC_LBL_INPUT_CODEC,12,18,44,8
+    LTEXT           "Channel:",IDC_LBL_INPUT_CHANNEL,12,30,44,8
+    LTEXT           "Sample Rate:",IDC_LBL_INPUT_SAMPLERATE,12,42,44,8
+    LTEXT           "Format:",IDC_LBL_INPUT_FORMAT,12,54,44,8
+    LTEXT           "",IDC_INPUT_CODEC,58,18,45,8
+    LTEXT           "",IDC_INPUT_CHANNEL,58,30,45,8
+    LTEXT           "",IDC_INPUT_SAMPLERATE,58,42,45,8
+    LTEXT           "",IDC_INPUT_FORMAT,58,54,45,8
+    GROUPBOX        "Output",IDC_OUTPUT_STATUS,109,7,98,61
+    LTEXT           "Codec:",IDC_LBL_OUTPUT_CODEC,114,18,44,8
+    LTEXT           "Channel:",IDC_LBL_OUTPUT_CHANNEL,114,30,44,8
+    LTEXT           "Sample Rate:",IDC_LBL_OUTPUT_SAMPLERATE,114,42,44,8
+    LTEXT           "Format:",IDC_LBL_OUTPUT_FORMAT,114,54,44,8
+    LTEXT           "",IDC_OUTPUT_CODEC,160,18,45,8
+    LTEXT           "",IDC_OUTPUT_CHANNEL,160,30,45,8
+    LTEXT           "",IDC_OUTPUT_SAMPLERATE,160,42,45,8
+    LTEXT           "",IDC_OUTPUT_FORMAT,160,54,45,8
+    GROUPBOX        "Channel Output",IDC_VOLUME,7,71,200,77
+    CONTROL         "",IDC_VOLUME1,"msctls_progress32",PBS_VERTICAL | WS_BORDER,14,84,12,45
+    CONTROL         "",IDC_VOLUME2,"msctls_progress32",PBS_VERTICAL | WS_BORDER,39,84,12,45
+    CONTROL         "",IDC_VOLUME3,"msctls_progress32",PBS_VERTICAL | WS_BORDER,64,84,12,45
+    CONTROL         "",IDC_VOLUME4,"msctls_progress32",PBS_VERTICAL | WS_BORDER,89,84,12,45
+    CONTROL         "",IDC_VOLUME5,"msctls_progress32",PBS_VERTICAL | WS_BORDER,114,84,12,45
+    CONTROL         "",IDC_VOLUME6,"msctls_progress32",PBS_VERTICAL | WS_BORDER,139,84,12,45
+    CONTROL         "",IDC_VOLUME7,"msctls_progress32",PBS_VERTICAL | WS_BORDER,164,84,12,45
+    CONTROL         "",IDC_VOLUME8,"msctls_progress32",PBS_VERTICAL | WS_BORDER,189,84,12,45
+    CTEXT           "L",IDC_VOLUME1_DESC,9,132,21,8
+    CTEXT           "R",IDC_VOLUME2_DESC,34,132,21,8
+    CTEXT           "C",IDC_VOLUME3_DESC,59,132,21,8
+    CTEXT           "LFE",IDC_VOLUME4_DESC,84,132,21,8
+    CTEXT           "BL",IDC_VOLUME5_DESC,109,132,21,8
+    CTEXT           "BR",IDC_VOLUME6_DESC,134,132,21,8
+    CTEXT           "SL",IDC_VOLUME7_DESC,159,132,21,8
+    CTEXT           "SR",IDC_VOLUME8_DESC,184,132,21,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PROPPAGE_AUDIO_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_PROPPAGE_AUDIO_MIXING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_PROPPAGE_FORMATS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_PROPPAGE_STATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_SETTINGS            "Audio Settings"
+    IDS_STATUS              "Status"
+    IDS_FORMATS             "Formats"
+    IDS_MIXER               "Mixing"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#include "LAVAudio.rc2" // non-Microsoft Visual C++ edited resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

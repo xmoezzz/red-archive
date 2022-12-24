@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{83F0170E-6AB3-467B-98D5-E061BD2BF00D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>QuickSync</RootNamespace>
+    <ProjectName>IntelQuickSyncDecoder</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)obj\$(Configuration)_$(PlatformName)_VC2010\$(ProjectName)\</OutDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>MSDK\lib\$(PlatformName);$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)obj\$(Configuration)_$(PlatformName)_VC2010\$(ProjectName)\</IntDir>
+    <GenerateManifest>true</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>MSDK\lib\$(PlatformName);$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)obj\$(Configuration)_$(PlatformName)_VC2010\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)_$(PlatformName)_VC2010\$(ProjectName)\</IntDir>
+    <GenerateManifest>true</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>MSDK\lib\$(PlatformName);$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)obj\$(Configuration)_$(PlatformName)_VC2010\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)_$(PlatformName)_VC2010\$(ProjectName)\</IntDir>
+    <GenerateManifest>true</GenerateManifest>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)obj\$(Configuration)_$(PlatformName)_VC2010\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Configuration)_$(PlatformName)_VC2010\$(ProjectName)\</IntDir>
+    <GenerateManifest>true</GenerateManifest>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>MSDK\lib\$(PlatformName);$(LibraryPath)</LibraryPath>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_WINDOWS;_USRDLL;QUICKSYNC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4995</DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalIncludeDirectories>$(INTELMEDIASDK_WINSDK_PATH)\Include;$(INTELMEDIASDK_WINSDK_PATH)\Include\um;$(INTELMEDIASDK_WINSDK_PATH)\Include\shared;MSDK\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>IntelQuickSyncDecoder.def</ModuleDefinitionFile>
+      <AdditionalDependencies>winmm.lib;uuid.lib;D3D9.lib;Dxva2.lib;libmfx.lib;strmiids.lib;d3d11.lib;dxgi.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalLibraryDirectories>$(INTELMEDIASDK_WINSDK_PATH)\Lib;$(INTELMEDIASDK_WINSDK_PATH)\Lib\win8\um\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(SolutionDir)bin\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_WINDOWS;_USRDLL;QUICKSYNC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4995</DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalIncludeDirectories>$(INTELMEDIASDK_WINSDK_PATH)\Include;$(INTELMEDIASDK_WINSDK_PATH)\Include\um;$(INTELMEDIASDK_WINSDK_PATH)\Include\shared;MSDK\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>IntelQuickSyncDecoder.def</ModuleDefinitionFile>
+      <AdditionalDependencies>winmm.lib;uuid.lib;D3D9.lib;Dxva2.lib;libmfx.lib;strmiids.lib;d3d11.lib;dxgi.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>$(INTELMEDIASDK_WINSDK_PATH)\Lib\x64;$(INTELMEDIASDK_WINSDK_PATH)\Lib\win8\um\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(SolutionDir)bin\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;QUICKSYNC_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4995</DisableSpecificWarnings>
+      <WarningLevel>Level4</WarningLevel>
+      <AdditionalIncludeDirectories>$(INTELMEDIASDK_WINSDK_PATH)\Include;$(INTELMEDIASDK_WINSDK_PATH)\Include\um;$(INTELMEDIASDK_WINSDK_PATH)\Include\shared;MSDK\include</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>IntelQuickSyncDecoder.def</ModuleDefinitionFile>
+      <AdditionalDependencies>winmm.lib;uuid.lib;D3D9.lib;Dxva2.lib;libmfx.lib;strmiids.lib;d3d11.lib;dxgi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(INTELMEDIASDK_WINSDK_PATH)\Lib;$(INTELMEDIASDK_WINSDK_PATH)\Lib\win8\um\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>$(SolutionDir)bin\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.LIB</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;QUICKSYNC_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4995</DisableSpecificWarnings>
+      <WarningLevel>Level4</WarningLevel>
+      <AdditionalIncludeDirectories>$(INTELMEDIASDK_WINSDK_PATH)\Include;$(INTELMEDIASDK_WINSDK_PATH)\Include\um;$(INTELMEDIASDK_WINSDK_PATH)\Include\shared;MSDK\include</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <StringPooling>true</StringPooling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ModuleDefinitionFile>IntelQuickSyncDecoder.def</ModuleDefinitionFile>
+      <AdditionalDependencies>winmm.lib;uuid.lib;D3D9.lib;Dxva2.lib;libmfx.lib;strmiids.lib;d3d11.lib;dxgi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(INTELMEDIASDK_WINSDK_PATH)\Lib\x64;$(INTELMEDIASDK_WINSDK_PATH)\Lib\win8\um\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>$(SolutionDir)bin\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.LIB</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="IntelQuickSyncDecoder.def" />
+    <None Include="license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base_allocator.h" />
+    <ClInclude Include="CodecInfo.h" />
+    <ClInclude Include="d3d11_allocator.h" />
+    <ClInclude Include="d3d11_device.h" />
+    <ClInclude Include="d3d_device.h" />
+    <ClInclude Include="H264Nalu.h" />
+    <ClInclude Include="hw_device.h" />
+    <ClInclude Include="QuickSyncDecoder.h" />
+    <ClInclude Include="d3d_allocator.h" />
+    <ClInclude Include="IQuickSyncDecoder.h" />
+    <ClInclude Include="frame_constructors.h" />
+    <ClInclude Include="QuickSync.h" />
+    <ClInclude Include="QuickSyncUtils.h" />
+    <ClInclude Include="QuickSyncVPP.h" />
+    <ClInclude Include="QuickSync_defs.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="sysmem_allocator.h" />
+    <ClInclude Include="TimeManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base_alllocator.cpp" />
+    <ClCompile Include="d3d11_allocator.cpp" />
+    <ClCompile Include="d3d11_device.cpp" />
+    <ClCompile Include="d3d_device.cpp" />
+    <ClCompile Include="QuickSyncExports.cpp" />
+    <ClCompile Include="H264Nalu.cpp" />
+    <ClCompile Include="QuickSyncDecoder.cpp" />
+    <ClCompile Include="d3d_allocator.cpp" />
+    <ClCompile Include="frame_constructors.cpp" />
+    <ClCompile Include="QuickSync.cpp" />
+    <ClCompile Include="QuickSyncUtils.cpp" />
+    <ClCompile Include="QuickSyncVPP.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sysmem_allocator.cpp" />
+    <ClCompile Include="TimeManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IntelQuickSyncDecoder.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

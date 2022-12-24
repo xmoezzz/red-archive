@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\parsers">
+      <UniqueIdentifier>{30aabf4d-c49c-4299-82a6-eda004fc7b22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\parsers">
+      <UniqueIdentifier>{a78d7ea2-1b41-4d14-bcbc-7367aee8f548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pixconv">
+      <UniqueIdentifier>{785bf298-6050-43e0-81d0-54dd1389be17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pixconv">
+      <UniqueIdentifier>{4b09de39-e456-4b36-98fa-aba7f24526bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\decoders">
+      <UniqueIdentifier>{e2f0f0cd-c474-4ba2-aa2e-dd8e689907e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\decoders">
+      <UniqueIdentifier>{c5cd3602-30d6-48ff-8100-230758b36fb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\decoders\dxva2">
+      <UniqueIdentifier>{2417dd22-d693-40ad-a3f7-a6e3b4e22b9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\decoders\dxva2">
+      <UniqueIdentifier>{d3bbf10b-cfb1-45d9-8cb4-6323349e6b22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\subtitles">
+      <UniqueIdentifier>{fb30ec43-26d9-4ea0-950b-4a055654a2e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\subtitles">
+      <UniqueIdentifier>{edcd1461-a03c-4080-84ef-a1e5d2e4f2b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\subtitles\blend">
+      <UniqueIdentifier>{313fee8a-af36-434b-9ac0-808a14d70bb0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LAVVideo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Media.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LAVPixFmtConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoSettingsProp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\VC1HeaderParser.cpp">
+      <Filter>Source Files\parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\MPEG2HeaderParser.cpp">
+      <Filter>Source Files\parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="pixconv\pixconv.cpp">
+      <Filter>Source Files\pixconv</Filter>
+    </ClCompile>
+    <ClCompile Include="pixconv\convert_generic.cpp">
+      <Filter>Source Files\pixconv</Filter>
+    </ClCompile>
+    <ClCompile Include="pixconv\yuv444_ayuv.cpp">
+      <Filter>Source Files\pixconv</Filter>
+    </ClCompile>
+    <ClCompile Include="pixconv\interleave.cpp">
+      <Filter>Source Files\pixconv</Filter>
+    </ClCompile>
+    <ClCompile Include="pixconv\yuv2yuv_unscaled.cpp">
+      <Filter>Source Files\pixconv</Filter>
+    </ClCompile>
+    <ClCompile Include="pixconv\yuv2rgb.cpp">
+      <Filter>Source Files\pixconv</Filter>
+    </ClCompile>
+    <ClCompile Include="decoders\avcodec.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="decoders\pixfmt.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="decoders\cuvid.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\H264SequenceParser.cpp">
+      <Filter>Source Files\parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="pixconv\yuv420_yuy2.cpp">
+      <Filter>Source Files\pixconv</Filter>
+    </ClCompile>
+    <ClCompile Include="Filtering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="decoders\quicksync.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="decoders\dxva2dec.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoOutputPin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="decoders\dxva2\DXVA2SurfaceAllocator.cpp">
+      <Filter>Source Files\decoders\dxva2</Filter>
+    </ClCompile>
+    <ClCompile Include="decoders\wmv9.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="DecodeThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="subtitles\LAVSubtitleProvider.cpp">
+      <Filter>Source Files\subtitles</Filter>
+    </ClCompile>
+    <ClCompile Include="subtitles\SubRenderOptionsImpl.cpp">
+      <Filter>Source Files\subtitles</Filter>
+    </ClCompile>
+    <ClCompile Include="subtitles\LAVSubtitleFrame.cpp">
+      <Filter>Source Files\subtitles</Filter>
+    </ClCompile>
+    <ClCompile Include="subtitles\LAVSubtitleConsumer.cpp">
+      <Filter>Source Files\subtitles</Filter>
+    </ClCompile>
+    <ClCompile Include="subtitles\blend\blend_generic.cpp">
+      <Filter>Source Files\subtitles\blend</Filter>
+    </ClCompile>
+    <ClCompile Include="subtitles\LAVVideoSubtitleInputPin.cpp">
+      <Filter>Source Files\subtitles</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoInputPin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pixconv\rgb2rgb_unscaled.cpp">
+      <Filter>Source Files\pixconv</Filter>
+    </ClCompile>
+    <ClCompile Include="decoders\wmv9mft.cpp">
+      <Filter>Source Files\decoders</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\AnnexBConverter.cpp">
+      <Filter>Source Files\parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="parsers\HEVCSequenceParser.cpp">
+      <Filter>Source Files\parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="pixconv\convert_direct.cpp">
+      <Filter>Source Files\pixconv</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LAVVideo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Media.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LAVPixFmtConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoSettingsProp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LAVVideoSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parsers\VC1HeaderParser.h">
+      <Filter>Header Files\parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="parsers\MPEG2HeaderParser.h">
+      <Filter>Header Files\parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="pixconv\pixconv_internal.h">
+      <Filter>Header Files\pixconv</Filter>
+    </ClInclude>
+    <ClInclude Include="pixconv\pixconv_sse2_templates.h">
+      <Filter>Header Files\pixconv</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\ILAVDecoder.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\DecBase.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\avcodec.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\cuvid.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="parsers\H264SequenceParser.h">
+      <Filter>Header Files\parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\quicksync.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\dxva2dec.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoOutputPin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\dxva2\DXVA2SurfaceAllocator.h">
+      <Filter>Header Files\decoders\dxva2</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\wmv9.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="DecodeThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\includes\SubRenderIntf.h">
+      <Filter>Header Files\subtitles</Filter>
+    </ClInclude>
+    <ClInclude Include="subtitles\LAVSubtitleProvider.h">
+      <Filter>Header Files\subtitles</Filter>
+    </ClInclude>
+    <ClInclude Include="subtitles\SubRenderOptionsImpl.h">
+      <Filter>Header Files\subtitles</Filter>
+    </ClInclude>
+    <ClInclude Include="subtitles\LAVSubtitleFrame.h">
+      <Filter>Header Files\subtitles</Filter>
+    </ClInclude>
+    <ClInclude Include="subtitles\LAVSubtitleConsumer.h">
+      <Filter>Header Files\subtitles</Filter>
+    </ClInclude>
+    <ClInclude Include="subtitles\LAVVideoSubtitleInputPin.h">
+      <Filter>Header Files\subtitles</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoInputPin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="decoders\wmv9mft.h">
+      <Filter>Header Files\decoders</Filter>
+    </ClInclude>
+    <ClInclude Include="parsers\AnnexBConverter.h">
+      <Filter>Header Files\parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="parsers\HEVCSequenceParser.h">
+      <Filter>Header Files\parsers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LAVVideo.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LAVVideo.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\resources\red.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="LAVVideo.manifest">
+      <Filter>Resource Files</Filter>
+    </Manifest>
+  </ItemGroup>
+</Project>

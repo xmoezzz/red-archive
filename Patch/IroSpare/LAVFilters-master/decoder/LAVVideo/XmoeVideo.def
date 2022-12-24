@@ -1,0 +1,10 @@
+; XmoeVideo.def ; declares the exports
+
+LIBRARY         "XmoeVideo.ax"
+
+EXPORTS
+                DllGetClassObject PRIVATE
+                DllCanUnloadNow PRIVATE
+                DllRegisterServer PRIVATE
+                DllUnregisterServer PRIVATE
+                OpenConfiguration PRIVATE

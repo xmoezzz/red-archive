@@ -1,0 +1,1 @@
+for %%s in (*.ks) do encoder.exe "%%s"
