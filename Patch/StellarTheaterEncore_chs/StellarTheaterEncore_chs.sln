@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StellarTheaterEncore_chs", "StellarTheaterEncore_chs\StellarTheaterEncore_chs.vcxproj", "{64039CFF-3E3A-4EEE-82D8-DC70F138475B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PackText", "PackText\PackText.vcxproj", "{FDC039BE-67EB-4798-A9FE-17F14CE48FB9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Loader", "Loader\Loader.vcxproj", "{F73D65EB-6DEF-4602-9222-AE8BF90246AE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GenFileList", "GenFileList\GenFileList.vcxproj", "{A043D866-5AAF-4E86-B6E1-8581E4E6F25D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RenameFiles", "RenameFiles\RenameFiles.vcxproj", "{C6DF8597-30BD-410B-84F8-E2874A8F9B47}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HashTest", "HashTest\HashTest.vcxproj", "{77F66FA3-6B71-4F78-B66D-E8DFC8D66EFF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindKeywordAndAttack", "FindKeywordAndAttack\FindKeywordAndAttack.vcxproj", "{61637AB7-B749-4AE6-A046-2979F99AE50B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64039CFF-3E3A-4EEE-82D8-DC70F138475B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64039CFF-3E3A-4EEE-82D8-DC70F138475B}.Debug|Win32.Build.0 = Debug|Win32
+		{64039CFF-3E3A-4EEE-82D8-DC70F138475B}.Release|Win32.ActiveCfg = Release|Win32
+		{64039CFF-3E3A-4EEE-82D8-DC70F138475B}.Release|Win32.Build.0 = Release|Win32
+		{FDC039BE-67EB-4798-A9FE-17F14CE48FB9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FDC039BE-67EB-4798-A9FE-17F14CE48FB9}.Debug|Win32.Build.0 = Debug|Win32
+		{FDC039BE-67EB-4798-A9FE-17F14CE48FB9}.Release|Win32.ActiveCfg = Release|Win32
+		{FDC039BE-67EB-4798-A9FE-17F14CE48FB9}.Release|Win32.Build.0 = Release|Win32
+		{F73D65EB-6DEF-4602-9222-AE8BF90246AE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F73D65EB-6DEF-4602-9222-AE8BF90246AE}.Debug|Win32.Build.0 = Debug|Win32
+		{F73D65EB-6DEF-4602-9222-AE8BF90246AE}.Release|Win32.ActiveCfg = Release|Win32
+		{F73D65EB-6DEF-4602-9222-AE8BF90246AE}.Release|Win32.Build.0 = Release|Win32
+		{A043D866-5AAF-4E86-B6E1-8581E4E6F25D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A043D866-5AAF-4E86-B6E1-8581E4E6F25D}.Debug|Win32.Build.0 = Debug|Win32
+		{A043D866-5AAF-4E86-B6E1-8581E4E6F25D}.Release|Win32.ActiveCfg = Release|Win32
+		{A043D866-5AAF-4E86-B6E1-8581E4E6F25D}.Release|Win32.Build.0 = Release|Win32
+		{C6DF8597-30BD-410B-84F8-E2874A8F9B47}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C6DF8597-30BD-410B-84F8-E2874A8F9B47}.Debug|Win32.Build.0 = Debug|Win32
+		{C6DF8597-30BD-410B-84F8-E2874A8F9B47}.Release|Win32.ActiveCfg = Release|Win32
+		{C6DF8597-30BD-410B-84F8-E2874A8F9B47}.Release|Win32.Build.0 = Release|Win32
+		{77F66FA3-6B71-4F78-B66D-E8DFC8D66EFF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{77F66FA3-6B71-4F78-B66D-E8DFC8D66EFF}.Debug|Win32.Build.0 = Debug|Win32
+		{77F66FA3-6B71-4F78-B66D-E8DFC8D66EFF}.Release|Win32.ActiveCfg = Release|Win32
+		{77F66FA3-6B71-4F78-B66D-E8DFC8D66EFF}.Release|Win32.Build.0 = Release|Win32
+		{61637AB7-B749-4AE6-A046-2979F99AE50B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{61637AB7-B749-4AE6-A046-2979F99AE50B}.Debug|Win32.Build.0 = Debug|Win32
+		{61637AB7-B749-4AE6-A046-2979F99AE50B}.Release|Win32.ActiveCfg = Release|Win32
+		{61637AB7-B749-4AE6-A046-2979F99AE50B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
