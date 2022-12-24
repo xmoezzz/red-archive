@@ -1,0 +1,84 @@
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub13Start, SaveStub13);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub14Start, SaveStub14);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub15Start, SaveStub15);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub16Start, SaveStub16);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub17Start, SaveStub17);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub18Start, SaveStub18);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub19Start, SaveStub19);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub20Start, SaveStub20);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub21Start, SaveStub21);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub22Start, SaveStub22);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub23Start, SaveStub23);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub24Start, SaveStub24);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub25Start, SaveStub25);
+DetourTransactionCommit();
+
+
+DetourTransactionBegin();
+DetourUpdateThread(GetCurrentThread());
+DetourAttach((void**)&SaveStub26Start, SaveStub26);
+DetourTransactionCommit();
+
+

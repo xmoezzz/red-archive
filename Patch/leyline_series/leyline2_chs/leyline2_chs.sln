@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leyline2_chs", "leyline2_chs\leyline2_chs.vcxproj", "{48947E8F-65F9-4C29-931A-F02B33150B4A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XmoeCompiler", "XmoeCompiler\XmoeCompiler.vcxproj", "{FA55AF0F-5168-4667-A513-239CA7DB5CEE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XmoeTextEncoder", "XmoeTextEncoder\XmoeTextEncoder.vcxproj", "{753A7027-2597-4A3D-B42F-28D03F5F151A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConvText", "ConvText\ConvText.vcxproj", "{A62CFBA6-22FC-4313-A015-FF0B0E53EDC1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XmoeTextDecoder", "XmoeTextDecoder\XmoeTextDecoder.vcxproj", "{E192A5EF-ECD6-4AE6-A9E9-2D1DA81C25EF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Loader", "Loader\Loader.vcxproj", "{835BA2A6-0291-417D-9B0D-68D2EE31034B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48947E8F-65F9-4C29-931A-F02B33150B4A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{48947E8F-65F9-4C29-931A-F02B33150B4A}.Debug|Win32.Build.0 = Debug|Win32
+		{48947E8F-65F9-4C29-931A-F02B33150B4A}.Release|Win32.ActiveCfg = Release|Win32
+		{48947E8F-65F9-4C29-931A-F02B33150B4A}.Release|Win32.Build.0 = Release|Win32
+		{FA55AF0F-5168-4667-A513-239CA7DB5CEE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FA55AF0F-5168-4667-A513-239CA7DB5CEE}.Debug|Win32.Build.0 = Debug|Win32
+		{FA55AF0F-5168-4667-A513-239CA7DB5CEE}.Release|Win32.ActiveCfg = Release|Win32
+		{FA55AF0F-5168-4667-A513-239CA7DB5CEE}.Release|Win32.Build.0 = Release|Win32
+		{753A7027-2597-4A3D-B42F-28D03F5F151A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{753A7027-2597-4A3D-B42F-28D03F5F151A}.Debug|Win32.Build.0 = Debug|Win32
+		{753A7027-2597-4A3D-B42F-28D03F5F151A}.Release|Win32.ActiveCfg = Release|Win32
+		{753A7027-2597-4A3D-B42F-28D03F5F151A}.Release|Win32.Build.0 = Release|Win32
+		{A62CFBA6-22FC-4313-A015-FF0B0E53EDC1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A62CFBA6-22FC-4313-A015-FF0B0E53EDC1}.Debug|Win32.Build.0 = Debug|Win32
+		{A62CFBA6-22FC-4313-A015-FF0B0E53EDC1}.Release|Win32.ActiveCfg = Release|Win32
+		{A62CFBA6-22FC-4313-A015-FF0B0E53EDC1}.Release|Win32.Build.0 = Release|Win32
+		{E192A5EF-ECD6-4AE6-A9E9-2D1DA81C25EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E192A5EF-ECD6-4AE6-A9E9-2D1DA81C25EF}.Debug|Win32.Build.0 = Debug|Win32
+		{E192A5EF-ECD6-4AE6-A9E9-2D1DA81C25EF}.Release|Win32.ActiveCfg = Release|Win32
+		{E192A5EF-ECD6-4AE6-A9E9-2D1DA81C25EF}.Release|Win32.Build.0 = Release|Win32
+		{835BA2A6-0291-417D-9B0D-68D2EE31034B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{835BA2A6-0291-417D-9B0D-68D2EE31034B}.Debug|Win32.Build.0 = Debug|Win32
+		{835BA2A6-0291-417D-9B0D-68D2EE31034B}.Release|Win32.ActiveCfg = Release|Win32
+		{835BA2A6-0291-417D-9B0D-68D2EE31034B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

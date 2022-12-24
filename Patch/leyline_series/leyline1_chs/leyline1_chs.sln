@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Loader", "Loader\Loader.vcxproj", "{A72E9B1B-4FCC-4A50-BDD1-D1548D365675}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leyline1_chs", "leyline1_chs\leyline1_chs.vcxproj", "{99322BD6-2BEA-4542-9E54-6AAA4FD128B5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XmoeCompiler", "XmoeCompiler\XmoeCompiler.vcxproj", "{1E8B5349-1F59-4EB8-ADA0-4B89DE251995}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A72E9B1B-4FCC-4A50-BDD1-D1548D365675}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A72E9B1B-4FCC-4A50-BDD1-D1548D365675}.Debug|Win32.Build.0 = Debug|Win32
+		{A72E9B1B-4FCC-4A50-BDD1-D1548D365675}.Release|Win32.ActiveCfg = Release|Win32
+		{A72E9B1B-4FCC-4A50-BDD1-D1548D365675}.Release|Win32.Build.0 = Release|Win32
+		{99322BD6-2BEA-4542-9E54-6AAA4FD128B5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{99322BD6-2BEA-4542-9E54-6AAA4FD128B5}.Debug|Win32.Build.0 = Debug|Win32
+		{99322BD6-2BEA-4542-9E54-6AAA4FD128B5}.Release|Win32.ActiveCfg = Release|Win32
+		{99322BD6-2BEA-4542-9E54-6AAA4FD128B5}.Release|Win32.Build.0 = Release|Win32
+		{1E8B5349-1F59-4EB8-ADA0-4B89DE251995}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E8B5349-1F59-4EB8-ADA0-4B89DE251995}.Debug|Win32.Build.0 = Debug|Win32
+		{1E8B5349-1F59-4EB8-ADA0-4B89DE251995}.Release|Win32.ActiveCfg = Release|Win32
+		{1E8B5349-1F59-4EB8-ADA0-4B89DE251995}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
