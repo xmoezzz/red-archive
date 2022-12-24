@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KoikakePackerV1", "KoikakePackerV1\KoikakePackerV1.vcxproj", "{F402370B-29F1-4C86-88B3-449C4E696524}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F402370B-29F1-4C86-88B3-449C4E696524}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F402370B-29F1-4C86-88B3-449C4E696524}.Debug|Win32.Build.0 = Debug|Win32
+		{F402370B-29F1-4C86-88B3-449C4E696524}.Release|Win32.ActiveCfg = Release|Win32
+		{F402370B-29F1-4C86-88B3-449C4E696524}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
