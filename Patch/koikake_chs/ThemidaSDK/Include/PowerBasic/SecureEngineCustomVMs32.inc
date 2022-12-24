@@ -1,0 +1,774 @@
+' ******************************************************************************
+' Header: SecureEngineCustomVMs32.inc
+' Description: PowerBasic32 macros definitions
+'
+' Author/s: Oreans Technologies 
+' (c) 2015 Oreans Technologies
+'
+' --- File generated automatically from Oreans VM Generator (16/6/2015) ---
+' ******************************************************************************
+
+' ******************************************************************************
+'                                 Macros definition
+' ******************************************************************************
+
+MACRO VM_TIGER_WHITE_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x64
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_TIGER_WHITE_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0xF4
+  !db 0x01
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_TIGER_RED_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x65
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_TIGER_RED_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0xF5
+  !db 0x01
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_TIGER_BLACK_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x66
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_TIGER_BLACK_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0xF6
+  !db 0x01
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_FISH_WHITE_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x6A
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_FISH_WHITE_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0xFA
+  !db 0x01
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_FISH_RED_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x6C
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_FISH_RED_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0xFC
+  !db 0x01
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_FISH_BLACK_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x6E
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_FISH_BLACK_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0xFE
+  !db 0x01
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_PUMA_WHITE_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x70
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_PUMA_WHITE_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x00
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_PUMA_RED_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x72
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_PUMA_RED_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x02
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_PUMA_BLACK_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x74
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_PUMA_BLACK_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x04
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_SHARK_WHITE_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x76
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_SHARK_WHITE_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x06
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_SHARK_RED_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x78
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_SHARK_RED_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x08
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_SHARK_BLACK_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x7A
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_SHARK_BLACK_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x0A
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_DOLPHIN_WHITE_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x86
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_DOLPHIN_WHITE_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x16
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_DOLPHIN_RED_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x88
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_DOLPHIN_RED_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x18
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_DOLPHIN_BLACK_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x8A
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_DOLPHIN_BLACK_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x1A
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_EAGLE_WHITE_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x92
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_EAGLE_WHITE_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x22
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_EAGLE_RED_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x94
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_EAGLE_RED_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x24
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_EAGLE_BLACK_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x96
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_EAGLE_BLACK_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x26
+  !db 0x02
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_MUTATE_ONLY_START
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x10
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+
+MACRO VM_MUTATE_ONLY_END
+  !db &HEB
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+  !db 0x11
+  !db 0x00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H00
+  !db &H57
+  !db &H4C
+  !db &H20
+  !db &H20
+END MACRO
+

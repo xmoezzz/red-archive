@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{7a0ddb42-83ee-4706-9480-f314887e105c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SenaHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="my.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TextCompiler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lz4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FastLz.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IRendererBufferAccess.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="IBufferRenderer.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="IRendererBufferVideo.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferRenderer.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CIStream.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="asyncio.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="asyncrdr.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="FileStream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="koikake_chs_dll.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SenaHook.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="my.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyHook.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lz4.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FastLz.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBufferRenderer_i.c">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="IRendererBufferAccess_i.c">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="IRendererBufferVideo_i.c">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferRenderer.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="asyncio.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="asyncrdr.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="FileStream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="koikake_chs_dll.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="koikake_chs.ico" />
+    <Image Include="img\0002202.bmp" />
+    <Image Include="img\0002203.bmp" />
+    <Image Include="img\0002204.bmp" />
+    <Image Include="img\0002205.bmp" />
+    <Image Include="img\0002206.bmp" />
+    <Image Include="img\0002207.bmp" />
+    <Image Include="img\0002208.bmp" />
+    <Image Include="img\0002209.bmp" />
+    <Image Include="img\0002210.bmp" />
+    <Image Include="img\0002211.bmp" />
+    <Image Include="img\0002212.bmp" />
+    <Image Include="img\0002213.bmp" />
+    <Image Include="img\0002214.bmp" />
+    <Image Include="img\0002215.bmp" />
+    <Image Include="img\0002216.bmp" />
+    <Image Include="img\0002217.bmp" />
+    <Image Include="img\0002218.bmp" />
+    <Image Include="img\0002219.bmp" />
+    <Image Include="img\0002220.bmp" />
+    <Image Include="img\0002221.bmp" />
+    <Image Include="img\0002222.bmp" />
+    <Image Include="img\0002223.bmp" />
+    <Image Include="img\0002224.bmp" />
+    <Image Include="img\0002225.bmp" />
+    <Image Include="img\0002226.bmp" />
+    <Image Include="img\0002227.bmp" />
+    <Image Include="img\0002228.bmp" />
+    <Image Include="img\0002229.bmp" />
+    <Image Include="img\0002230.bmp" />
+    <Image Include="img\0002231.bmp" />
+    <Image Include="img\0002232.bmp" />
+    <Image Include="img\0002233.bmp" />
+    <Image Include="img\0002234.bmp" />
+    <Image Include="img\0002235.bmp" />
+    <Image Include="img\0002236.bmp" />
+    <Image Include="img\0002237.bmp" />
+    <Image Include="img\0002238.bmp" />
+    <Image Include="img\0002239.bmp" />
+    <Image Include="img\0002240.bmp" />
+    <Image Include="img\0002241.bmp" />
+    <Image Include="img\0002242.bmp" />
+    <Image Include="img\0002243.bmp" />
+    <Image Include="img\0002244.bmp" />
+    <Image Include="img\0002245.bmp" />
+    <Image Include="img\0002246.bmp" />
+    <Image Include="img\0002247.bmp" />
+    <Image Include="img\0002248.bmp" />
+    <Image Include="img\0002249.bmp" />
+    <Image Include="img\0002250.bmp" />
+    <Image Include="img\0002251.bmp" />
+    <Image Include="img\0002252.bmp" />
+    <Image Include="img\0002253.bmp" />
+    <Image Include="img\0002254.bmp" />
+    <Image Include="img\0002255.bmp" />
+    <Image Include="img\0002256.bmp" />
+    <Image Include="img\0002257.bmp" />
+    <Image Include="img\0002258.bmp" />
+    <Image Include="img\0002259.bmp" />
+    <Image Include="img\0002260.bmp" />
+    <Image Include="img\0002261.bmp" />
+    <Image Include="img\0002262.bmp" />
+    <Image Include="img\0002263.bmp" />
+    <Image Include="img\0002264.bmp" />
+    <Image Include="img\0002265.bmp" />
+    <Image Include="img\0002266.bmp" />
+    <Image Include="img\0002267.bmp" />
+    <Image Include="img\0002268.bmp" />
+    <Image Include="img\0002269.bmp" />
+    <Image Include="img\0002270.bmp" />
+    <Image Include="img\0002271.bmp" />
+    <Image Include="img\0002272.bmp" />
+    <Image Include="img\0002273.bmp" />
+    <Image Include="img\0002274.bmp" />
+    <Image Include="img\0002275.bmp" />
+    <Image Include="img\0002276.bmp" />
+    <Image Include="img\0002277.bmp" />
+    <Image Include="img\0002278.bmp" />
+    <Image Include="img\0002279.bmp" />
+    <Image Include="img\0002280.bmp" />
+    <Image Include="img\0002281.bmp" />
+    <Image Include="img\0002282.bmp" />
+    <Image Include="img\0002283.bmp" />
+    <Image Include="img\0002284.bmp" />
+    <Image Include="img\0002285.bmp" />
+    <Image Include="img\0002286.bmp" />
+    <Image Include="img\0002287.bmp" />
+    <Image Include="img\0002288.bmp" />
+    <Image Include="img\0002289.bmp" />
+    <Image Include="img\0002290.bmp" />
+    <Image Include="img\0002291.bmp" />
+    <Image Include="img\0002292.bmp" />
+    <Image Include="img\0002293.bmp" />
+    <Image Include="img\0002294.bmp" />
+    <Image Include="img\0002295.bmp" />
+    <Image Include="img\0002296.bmp" />
+    <Image Include="img\0002297.bmp" />
+    <Image Include="img\0002298.bmp" />
+    <Image Include="img\0002299.bmp" />
+    <Image Include="img\0002300.bmp" />
+    <Image Include="img\0002301.bmp" />
+    <Image Include="img\0002302.bmp" />
+    <Image Include="img\0002303.bmp" />
+    <Image Include="img\0002304.bmp" />
+    <Image Include="img\0002305.bmp" />
+    <Image Include="img\0002306.bmp" />
+    <Image Include="img\0002307.bmp" />
+    <Image Include="img\0002308.bmp" />
+    <Image Include="img\0002309.bmp" />
+    <Image Include="img\0002310.bmp" />
+    <Image Include="img\0002311.bmp" />
+    <Image Include="img\0002312.bmp" />
+    <Image Include="img\0002313.bmp" />
+    <Image Include="img\0002314.bmp" />
+    <Image Include="img\0002315.bmp" />
+    <Image Include="img\0002316.bmp" />
+    <Image Include="img\0002317.bmp" />
+    <Image Include="img\0002318.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="sse_memset.s">
+      <Filter>源文件</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XmoeSplitter.ax" />
+    <None Include="XmoeVideo.ax" />
+    <None Include="XmoeAudio.ax" />
+  </ItemGroup>
+</Project>

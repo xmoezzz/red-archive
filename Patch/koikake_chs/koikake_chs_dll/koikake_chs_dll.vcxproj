@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{19279037-6796-450A-A037-097FA1BC0601}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>koikake_chs_dll</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>koikake_chs</TargetName>
+    <IncludePath>$(ProjectDir)BaseClasses;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;KOIKAKE_CHS_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;KOIKAKE_CHS_DLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="asyncio.h" />
+    <ClInclude Include="asyncrdr.h" />
+    <ClInclude Include="BufferRenderer.h" />
+    <ClInclude Include="CIStream.h" />
+    <ClInclude Include="FastLz.h" />
+    <ClInclude Include="FileManager.h" />
+    <ClInclude Include="FileStream.h" />
+    <ClInclude Include="IBufferRenderer.h" />
+    <ClInclude Include="IRendererBufferAccess.h" />
+    <ClInclude Include="IRendererBufferVideo.h" />
+    <ClInclude Include="lz4.h" />
+    <ClInclude Include="my.h" />
+    <ClInclude Include="MyHook.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SenaHook.h" />
+    <ClInclude Include="TextCompiler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="asyncio.cpp" />
+    <ClCompile Include="asyncrdr.cpp" />
+    <ClCompile Include="BufferRenderer.cpp" />
+    <ClCompile Include="FastLz.c" />
+    <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="FileStream.cpp" />
+    <ClCompile Include="IBufferRenderer_i.c" />
+    <ClCompile Include="IRendererBufferAccess_i.c" />
+    <ClCompile Include="IRendererBufferVideo_i.c" />
+    <ClCompile Include="koikake_chs_dll.cpp" />
+    <ClCompile Include="lz4.c" />
+    <ClCompile Include="my.cpp" />
+    <ClCompile Include="MyHook.cpp" />
+    <ClCompile Include="SenaHook.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="koikake_chs_dll.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="img\0002202.bmp" />
+    <Image Include="img\0002203.bmp" />
+    <Image Include="img\0002204.bmp" />
+    <Image Include="img\0002205.bmp" />
+    <Image Include="img\0002206.bmp" />
+    <Image Include="img\0002207.bmp" />
+    <Image Include="img\0002208.bmp" />
+    <Image Include="img\0002209.bmp" />
+    <Image Include="img\0002210.bmp" />
+    <Image Include="img\0002211.bmp" />
+    <Image Include="img\0002212.bmp" />
+    <Image Include="img\0002213.bmp" />
+    <Image Include="img\0002214.bmp" />
+    <Image Include="img\0002215.bmp" />
+    <Image Include="img\0002216.bmp" />
+    <Image Include="img\0002217.bmp" />
+    <Image Include="img\0002218.bmp" />
+    <Image Include="img\0002219.bmp" />
+    <Image Include="img\0002220.bmp" />
+    <Image Include="img\0002221.bmp" />
+    <Image Include="img\0002222.bmp" />
+    <Image Include="img\0002223.bmp" />
+    <Image Include="img\0002224.bmp" />
+    <Image Include="img\0002225.bmp" />
+    <Image Include="img\0002226.bmp" />
+    <Image Include="img\0002227.bmp" />
+    <Image Include="img\0002228.bmp" />
+    <Image Include="img\0002229.bmp" />
+    <Image Include="img\0002230.bmp" />
+    <Image Include="img\0002231.bmp" />
+    <Image Include="img\0002232.bmp" />
+    <Image Include="img\0002233.bmp" />
+    <Image Include="img\0002234.bmp" />
+    <Image Include="img\0002235.bmp" />
+    <Image Include="img\0002236.bmp" />
+    <Image Include="img\0002237.bmp" />
+    <Image Include="img\0002238.bmp" />
+    <Image Include="img\0002239.bmp" />
+    <Image Include="img\0002240.bmp" />
+    <Image Include="img\0002241.bmp" />
+    <Image Include="img\0002242.bmp" />
+    <Image Include="img\0002243.bmp" />
+    <Image Include="img\0002244.bmp" />
+    <Image Include="img\0002245.bmp" />
+    <Image Include="img\0002246.bmp" />
+    <Image Include="img\0002247.bmp" />
+    <Image Include="img\0002248.bmp" />
+    <Image Include="img\0002249.bmp" />
+    <Image Include="img\0002250.bmp" />
+    <Image Include="img\0002251.bmp" />
+    <Image Include="img\0002252.bmp" />
+    <Image Include="img\0002253.bmp" />
+    <Image Include="img\0002254.bmp" />
+    <Image Include="img\0002255.bmp" />
+    <Image Include="img\0002256.bmp" />
+    <Image Include="img\0002257.bmp" />
+    <Image Include="img\0002258.bmp" />
+    <Image Include="img\0002259.bmp" />
+    <Image Include="img\0002260.bmp" />
+    <Image Include="img\0002261.bmp" />
+    <Image Include="img\0002262.bmp" />
+    <Image Include="img\0002263.bmp" />
+    <Image Include="img\0002264.bmp" />
+    <Image Include="img\0002265.bmp" />
+    <Image Include="img\0002266.bmp" />
+    <Image Include="img\0002267.bmp" />
+    <Image Include="img\0002268.bmp" />
+    <Image Include="img\0002269.bmp" />
+    <Image Include="img\0002270.bmp" />
+    <Image Include="img\0002271.bmp" />
+    <Image Include="img\0002272.bmp" />
+    <Image Include="img\0002273.bmp" />
+    <Image Include="img\0002274.bmp" />
+    <Image Include="img\0002275.bmp" />
+    <Image Include="img\0002276.bmp" />
+    <Image Include="img\0002277.bmp" />
+    <Image Include="img\0002278.bmp" />
+    <Image Include="img\0002279.bmp" />
+    <Image Include="img\0002280.bmp" />
+    <Image Include="img\0002281.bmp" />
+    <Image Include="img\0002282.bmp" />
+    <Image Include="img\0002283.bmp" />
+    <Image Include="img\0002284.bmp" />
+    <Image Include="img\0002285.bmp" />
+    <Image Include="img\0002286.bmp" />
+    <Image Include="img\0002287.bmp" />
+    <Image Include="img\0002288.bmp" />
+    <Image Include="img\0002289.bmp" />
+    <Image Include="img\0002290.bmp" />
+    <Image Include="img\0002291.bmp" />
+    <Image Include="img\0002292.bmp" />
+    <Image Include="img\0002293.bmp" />
+    <Image Include="img\0002294.bmp" />
+    <Image Include="img\0002295.bmp" />
+    <Image Include="img\0002296.bmp" />
+    <Image Include="img\0002297.bmp" />
+    <Image Include="img\0002298.bmp" />
+    <Image Include="img\0002299.bmp" />
+    <Image Include="img\0002300.bmp" />
+    <Image Include="img\0002301.bmp" />
+    <Image Include="img\0002302.bmp" />
+    <Image Include="img\0002303.bmp" />
+    <Image Include="img\0002304.bmp" />
+    <Image Include="img\0002305.bmp" />
+    <Image Include="img\0002306.bmp" />
+    <Image Include="img\0002307.bmp" />
+    <Image Include="img\0002308.bmp" />
+    <Image Include="img\0002309.bmp" />
+    <Image Include="img\0002310.bmp" />
+    <Image Include="img\0002311.bmp" />
+    <Image Include="img\0002312.bmp" />
+    <Image Include="img\0002313.bmp" />
+    <Image Include="img\0002314.bmp" />
+    <Image Include="img\0002315.bmp" />
+    <Image Include="img\0002316.bmp" />
+    <Image Include="img\0002317.bmp" />
+    <Image Include="img\0002318.bmp" />
+    <Image Include="koikake_chs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="sse_memset.s">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ml /c %(fileName).s</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(fileName).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XmoeAudio.ax" />
+    <None Include="XmoeSplitter.ax" />
+    <None Include="XmoeVideo.ax" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
