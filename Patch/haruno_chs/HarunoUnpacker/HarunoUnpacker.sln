@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HarunoUnpacker", "HarunoUnpacker\HarunoUnpacker.vcxproj", "{BC5A39E9-F46D-4EC1-9220-42089AE59821}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC5A39E9-F46D-4EC1-9220-42089AE59821}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC5A39E9-F46D-4EC1-9220-42089AE59821}.Debug|Win32.Build.0 = Debug|Win32
+		{BC5A39E9-F46D-4EC1-9220-42089AE59821}.Release|Win32.ActiveCfg = Release|Win32
+		{BC5A39E9-F46D-4EC1-9220-42089AE59821}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
